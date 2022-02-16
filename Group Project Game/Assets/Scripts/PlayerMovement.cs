@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
 
+
     //Variables for checking for ground
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -52,6 +53,8 @@ public class PlayerMovement : MonoBehaviour
            
         }
 
+
+        // sound of player walking
         if (isGrounded && Input.GetKey("w"))
         {
             if (!footstepIsPlaying)
@@ -62,9 +65,9 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                if (speed > 1)
+                if (speed < 10)
                 {
-                    if (Time.time - lastFootstepTime > 2600 / speed * Time.deltaTime)
+                    if (Time.time - lastFootstepTime > 2600 / 7 * Time.deltaTime)
                     {
                         footstepIsPlaying = false;
                     }
@@ -82,9 +85,9 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                if (speed > 1)
+                if (speed < 10)
                 {
-                    if (Time.time - lastFootstepTime > 2600 / speed * Time.deltaTime)
+                    if (Time.time - lastFootstepTime > 2600 / 7 * Time.deltaTime)
                     {
                         footstepIsPlaying = false;
                     }
@@ -102,9 +105,9 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                if (speed > 1)
+                if (speed < 10)
                 {
-                    if (Time.time - lastFootstepTime > 2600 / speed * Time.deltaTime)
+                    if (Time.time - lastFootstepTime > 2600 / 7 * Time.deltaTime)
                     {
                         footstepIsPlaying = false;
                     }
@@ -122,9 +125,90 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                if (speed > 1)
+                if (speed < 10)
                 {
-                    if (Time.time - lastFootstepTime > 2600 / speed * Time.deltaTime)
+                    if (Time.time - lastFootstepTime > 2600 / 7 * Time.deltaTime)
+                    {
+                        footstepIsPlaying = false;
+                    }
+                }
+            }
+        }
+
+        //sound of player sprinting
+        if (isGrounded && Input.GetKey("w"))
+        {
+            if (!footstepIsPlaying)
+            {
+                myFootstep.Post(gameObject);
+                lastFootstepTime = Time.time;
+                footstepIsPlaying = true;
+            }
+            else
+            {
+                if (speed > 7)
+                {
+                    if (Time.time - lastFootstepTime > 2600 / 10 * Time.deltaTime)
+                    {
+                        footstepIsPlaying = false;
+                    }
+                }
+            }
+        }
+
+        if (isGrounded && Input.GetKey("a"))
+        {
+            if (!footstepIsPlaying)
+            {
+                myFootstep.Post(gameObject);
+                lastFootstepTime = Time.time;
+                footstepIsPlaying = true;
+            }
+            else
+            {
+                if (speed > 7)
+                {
+                    if (Time.time - lastFootstepTime > 2600 / 10 * Time.deltaTime)
+                    {
+                        footstepIsPlaying = false;
+                    }
+                }
+            }
+        }
+
+        if (isGrounded && Input.GetKey("s"))
+        {
+            if (!footstepIsPlaying)
+            {
+                myFootstep.Post(gameObject);
+                lastFootstepTime = Time.time;
+                footstepIsPlaying = true;
+            }
+            else
+            {
+                if (speed > 7)
+                {
+                    if (Time.time - lastFootstepTime > 2600 / 10 * Time.deltaTime)
+                    {
+                        footstepIsPlaying = false;
+                    }
+                }
+            }
+        }
+
+        if (isGrounded && Input.GetKey("d"))
+        {
+            if (!footstepIsPlaying)
+            {
+                myFootstep.Post(gameObject);
+                lastFootstepTime = Time.time;
+                footstepIsPlaying = true;
+            }
+            else
+            {
+                if (speed > 7)
+                {
+                    if (Time.time - lastFootstepTime > 2600 / 10 * Time.deltaTime)
                     {
                         footstepIsPlaying = false;
                     }
