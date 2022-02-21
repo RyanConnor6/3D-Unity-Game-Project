@@ -41,12 +41,6 @@ public class PlayerMovement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        //Move vector
-        Vector3 move = Vector3.ClampMagnitude((transform.right * x + transform.forward * z), 1f);
-
-        //Move player using vector based off speed
-        playerController.Move(move * speed * Time.deltaTime);
-
         //If player jumps and is on ground, change velocity to make them jump
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
@@ -73,7 +67,12 @@ public class PlayerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         //Move player using velocity
-        playerController.Move(velocity * Time.deltaTime);
+        Vector3 move = transform.right * x * speed
+            + transform.forward * z * speed
+            + transform.up * velocity.y;
+
+
+        playerController.Move(move * Time.deltaTime);
 
         //Check if there is any object above player so they dont float when jumping under an object
         if ((playerController.collisionFlags & CollisionFlags.Above) != 0)
