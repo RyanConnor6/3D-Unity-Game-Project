@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 424672394}
   - component: {fileID: 424672393}
   - component: {fileID: 424672397}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 4TestGreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -536,7 +536,7 @@ GameObject:
   - component: {fileID: 573350655}
   - component: {fileID: 573350654}
   - component: {fileID: 573350658}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 3TestRed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -839,7 +839,7 @@ GameObject:
   - component: {fileID: 1416174124}
   - component: {fileID: 1416174123}
   - component: {fileID: 1416174127}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 2TestRed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1049,7 +1049,7 @@ GameObject:
   - component: {fileID: 1614591317}
   - component: {fileID: 1614591316}
   - component: {fileID: 1614591320}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 3TestBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1386,7 +1386,7 @@ GameObject:
   - component: {fileID: 1749016626}
   - component: {fileID: 1749016625}
   - component: {fileID: 1749016629}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 4TestRed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1506,7 +1506,7 @@ GameObject:
   - component: {fileID: 1858607830}
   - component: {fileID: 1858607829}
   - component: {fileID: 1858607833}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 3TestGreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1621,7 +1621,7 @@ GameObject:
   - component: {fileID: 1878324670}
   - component: {fileID: 1878324669}
   - component: {fileID: 1878324673}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 4TestBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1736,7 +1736,7 @@ GameObject:
   - component: {fileID: 1979365321}
   - component: {fileID: 1979365320}
   - component: {fileID: 1979365324}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 4TestYellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1851,7 +1851,7 @@ GameObject:
   - component: {fileID: 2145244565}
   - component: {fileID: 2145244564}
   - component: {fileID: 2145244568}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 2TestBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
