@@ -12,6 +12,7 @@ public class BlueScript : MonoBehaviour
     public float numberOfColours;
     public float timeBetweenSwitches;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,7 +56,7 @@ public class BlueScript : MonoBehaviour
             }
 
             gameObject.GetComponent<BoxCollider>().enabled = true;
-            rend.material = material2;
+            rend.material = material2;           
             yield return new WaitForSeconds(timeBetweenSwitches);
         }
     }

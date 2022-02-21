@@ -12,6 +12,7 @@ public class GreenScript : MonoBehaviour
     public float numberOfColours;
     public float timeBetweenSwitches;
 
+
     // Start is called before the first frame update
     void Start()
     {
