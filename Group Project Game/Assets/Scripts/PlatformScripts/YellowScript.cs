@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class YellowScript : MonoBehaviour
 {
-    public Material material1;
-    public Material material2;
-    public Renderer rend;
-    public GameObject timer;
-    public float time;
-    public float numberOfColours;
-    public float timeBetweenSwitches;
+    public Material InactiveMaterial;
+    public Material ActiveMaterial;
+    private Renderer rend;
+    public GameObject sceneController;
+    private float time;
+    private float numberOfColours;
+    private float timeBetweenSwitches;
 
     // Start is called before the first frame update
     void Start()
     {
         rend = GetComponent<Renderer>();
+        numberOfColours = sceneController.GetComponent<SceneController>().numberOfColours;
+        timeBetweenSwitches = sceneController.GetComponent<SceneController>().timeBetweenSwitches;
         StartCoroutine(FirstCycle());
     }
 
@@ -28,11 +30,11 @@ public class YellowScript : MonoBehaviour
     IEnumerator FirstCycle()
     {
         gameObject.GetComponent<BoxCollider>().enabled = false;
-        rend.material = material1;
+        rend.material = InactiveMaterial;
         yield return new WaitForSeconds(timeBetweenSwitches * 3);
 
         gameObject.GetComponent<BoxCollider>().enabled = true;
-        rend.material = material2;
+        rend.material = ActiveMaterial;
         yield return new WaitForSeconds(timeBetweenSwitches);
         StartCoroutine(ColourCycle());
     }
@@ -42,14 +44,14 @@ public class YellowScript : MonoBehaviour
         while (true)
         {
             gameObject.GetComponent<BoxCollider>().enabled = false;
-            rend.material = material1;
+            rend.material = InactiveMaterial;
             yield return new WaitForSeconds(timeBetweenSwitches);
 
             yield return new WaitForSeconds(timeBetweenSwitches);
             yield return new WaitForSeconds(timeBetweenSwitches);
 
             gameObject.GetComponent<BoxCollider>().enabled = true;
-            rend.material = material2;
+            rend.material = ActiveMaterial;
             yield return new WaitForSeconds(timeBetweenSwitches);
         }
     }
