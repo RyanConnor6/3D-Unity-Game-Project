@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SceneController : MonoBehaviour
 {
+    //Variables to use throughout scene
     public int numberOfColours;
     public int timeBetweenSwitches;
 

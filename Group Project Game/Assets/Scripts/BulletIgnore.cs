@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Code to destroy bullet when collision occurs
 public class BulletIgnore : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -18,6 +19,7 @@ public class BulletIgnore : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        //Destroy bullet on collision
         Destroy(gameObject);
     }
 }

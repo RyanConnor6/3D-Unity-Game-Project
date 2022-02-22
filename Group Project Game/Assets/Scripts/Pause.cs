@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour
 {
+    //Pause variables
     private bool paused = false;
     public GameObject pauseText;
     public GameObject pauseOverlay;
@@ -11,6 +12,7 @@ public class Pause : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Pause off
         pauseText.SetActive(false);
         pauseOverlay.SetActive(false);
     }
@@ -18,8 +20,10 @@ public class Pause : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Get esc key pressed
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            //If running pause game and show UI
             if (paused == false)
             {
                 Time.timeScale = 0;
@@ -28,6 +32,7 @@ public class Pause : MonoBehaviour
                 pauseText.SetActive(true);
                 pauseOverlay.SetActive(true);
             }
+            //If not running unpause game and hide UI
             else
             {
                 Time.timeScale = 1;
