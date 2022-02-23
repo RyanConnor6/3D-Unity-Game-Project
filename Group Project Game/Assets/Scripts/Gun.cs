@@ -9,7 +9,6 @@ public class Gun : MonoBehaviour
     public float damage = 10f;
     public float range = 100f;
     public float fireRate = 150f;
-    public float impactForce = 30f;
 
     //FX and other variables
     public Camera fpscamera;
@@ -69,10 +68,6 @@ public class Gun : MonoBehaviour
             {
                 target.TakeDamage(damage);
             }
-            if (hit.rigidbody != null)
-            {
-                //hit.rigidbody.AddForce(-hit.normal * impactForce);
-            }
 
             //Impact FX
             GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
@@ -119,10 +114,6 @@ public class Gun : MonoBehaviour
                 if (target != null)
                 {
                     target.TakeDamage(damage);
-                }
-                if (hit.rigidbody != null)
-                {
-                    //hit.rigidbody.AddForce(-hit.normal * impactForce);
                 }
 
                 //Impact FX
