@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8316224740965669777}
   - component: {fileID: 8316224740965669778}
   - component: {fileID: 8316224740965669779}
+  - component: {fileID: 7623245022919657760}
   m_Layer: 0
   m_Name: SceneController
   m_TagString: Untagged
@@ -60,3 +61,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseText: {fileID: 0}
   pauseOverlay: {fileID: 0}
+--- !u!114 &7623245022919657760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8316224740965669772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9601848f850ec340a6c56bc73b3d512, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObjects: []
+  objectToPool: {fileID: 1329845292236604, guid: 9bba9cf244c53c5439505dfc96fdd11c, type: 3}
+  amountToPool: 750
