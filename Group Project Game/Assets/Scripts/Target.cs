@@ -33,6 +33,7 @@ public class Target : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+
         }
     }
 

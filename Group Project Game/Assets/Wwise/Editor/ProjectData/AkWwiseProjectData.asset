@@ -55,6 +55,33 @@ MonoBehaviour:
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
   BankWwu:
+  - PhysicalPath: SoundBanks\Bullet_Impacts.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Bullet_Impacts
+      ObjectType: 12
+      guid: 11ce4b6a1d9bfe48b96f74cf4af7062a
+    ParentPath: SoundBanks\Bullet_Impacts
+    guid: 11ce4b6a1d9bfe48b96f74cf4af7062a
+    GuidInternal: 
+    m_lastTime: -8585558053726970145
+    List:
+    - name: SB_Bullet_Impacts
+      guid: 956a71edfe5eac4f9c55d962d38b7129
+      id: 716559825
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Bullet_Impacts
+        ObjectType: 12
+        guid: 11ce4b6a1d9bfe48b96f74cf4af7062a
+      - ElementName: SB_Bullet_Impacts
+        ObjectType: 7
+        guid: 956a71edfe5eac4f9c55d962d38b7129
+      Path: SoundBanks\Bullet_Impacts\SB_Bullet_Impacts
   - PhysicalPath: SoundBanks\Character.wwu
     PathAndIcons:
     - ElementName: SoundBanks
@@ -120,8 +147,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5a4144645d1223459f373a531253f549
     GuidInternal: 
-    m_lastTime: -8585565771555653318
-    List: []
+    m_lastTime: -8585558020099831920
+    List:
+    - name: Music
+      guid: c0dc003ec7ca8244a93275ac789e3cfb
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5a4144645d1223459f373a531253f549
+      - ElementName: Music
+        ObjectType: 7
+        guid: c0dc003ec7ca8244a93275ac789e3cfb
+      Path: SoundBanks\Default Work Unit\Music
   - PhysicalPath: SoundBanks\Pause.wwu
     PathAndIcons:
     - ElementName: SoundBanks
@@ -149,6 +190,33 @@ MonoBehaviour:
         ObjectType: 7
         guid: fb88e3e33235c342842f11a69a4371e4
       Path: SoundBanks\Pause\SB_Pause
+  - PhysicalPath: SoundBanks\Weapons.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Weapons
+      ObjectType: 12
+      guid: 1f41bcb2b174354dab6723daa2174dc9
+    ParentPath: SoundBanks\Weapons
+    guid: 1f41bcb2b174354dab6723daa2174dc9
+    GuidInternal: 
+    m_lastTime: -8585558053727039958
+    List:
+    - name: Weapons
+      guid: ea54c59ebe700f4d92ba28c9cbac1d50
+      id: 1467963052
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: 1f41bcb2b174354dab6723daa2174dc9
+      - ElementName: Weapons
+        ObjectType: 7
+        guid: ea54c59ebe700f4d92ba28c9cbac1d50
+      Path: SoundBanks\Weapons\Weapons
   EventWwu:
   - PhysicalPath: Events\Character.wwu
     PathAndIcons:
@@ -221,8 +289,59 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6f41478e812ae741a8698468adaf8e94
     GuidInternal: 
-    m_lastTime: -8585561340859012407
-    List: []
+    m_lastTime: -8585558020099861841
+    List:
+    - name: Play_Impact_2
+      guid: ce2e1be972834146870b5288f2396045
+      id: 4010092267
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f41478e812ae741a8698468adaf8e94
+      - ElementName: Play_Impact_2
+        ObjectType: 3
+        guid: ce2e1be972834146870b5288f2396045
+      Path: Events\Default Work Unit\Play_Impact_2
+      maxAttenuation: 0
+      maxDuration: 0.264417
+      minDuration: 0.264417
+    - name: Play_Level_1
+      guid: aaba59b331538449a5bd0203e1e6987e
+      id: 833230064
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f41478e812ae741a8698468adaf8e94
+      - ElementName: Play_Level_1
+        ObjectType: 3
+        guid: aaba59b331538449a5bd0203e1e6987e
+      Path: Events\Default Work Unit\Play_Level_1
+      maxAttenuation: 0
+      maxDuration: 13.061225
+      minDuration: 13.061225
+    - name: Play_Weapon1
+      guid: 36b2940691fa8145b30905ec5fd74ea6
+      id: 155002711
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f41478e812ae741a8698468adaf8e94
+      - ElementName: Play_Weapon1
+        ObjectType: 3
+        guid: 36b2940691fa8145b30905ec5fd74ea6
+      Path: Events\Default Work Unit\Play_Weapon1
+      maxAttenuation: 0
+      maxDuration: 0.531693
+      minDuration: 0.421031
   - PhysicalPath: Events\Pause.wwu
     PathAndIcons:
     - ElementName: Events
@@ -282,8 +401,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 57780971a3ef4645bfbe38a0213a53c6
     GuidInternal: 
-    m_lastTime: -8585566662461159224
-    List: []
+    m_lastTime: -8585558020099792026
+    List:
+    - name: Distance_Music
+      guid: 8b1b6ff042fe1e41b63174c2ba7bd57a
+      id: 3686004508
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 57780971a3ef4645bfbe38a0213a53c6
+      - ElementName: Distance_Music
+        ObjectType: 13
+        guid: 8b1b6ff042fe1e41b63174c2ba7bd57a
+      Path: Game Parameters\Default Work Unit\Distance_Music
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -296,8 +429,58 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 0935ef1c1bc0c549a8b7d472f80e6181
     GuidInternal: 
-    m_lastTime: -8585566662460710391
-    List: []
+    m_lastTime: -8585558020099762105
+    List:
+    - name: Music
+      guid: 5a94bdce5a91cc4ab66f62059c70a5ad
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0935ef1c1bc0c549a8b7d472f80e6181
+      - ElementName: Music
+        ObjectType: 9
+        guid: 5a94bdce5a91cc4ab66f62059c70a5ad
+      Path: States\Default Work Unit\Music
+      values:
+      - name: Level1_HorizontalMusic
+        guid: 743df117cc49344abb209e73a3704316
+        id: 582720662
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0935ef1c1bc0c549a8b7d472f80e6181
+        - ElementName: Music
+          ObjectType: 9
+          guid: 5a94bdce5a91cc4ab66f62059c70a5ad
+        - ElementName: Level1_HorizontalMusic
+          ObjectType: 8
+          guid: 743df117cc49344abb209e73a3704316
+      - name: None
+        guid: 5337c96feb19d841b393f0ae8e5aefdf
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0935ef1c1bc0c549a8b7d472f80e6181
+        - ElementName: Music
+          ObjectType: 9
+          guid: 5a94bdce5a91cc4ab66f62059c70a5ad
+        - ElementName: None
+          ObjectType: 8
+          guid: 5337c96feb19d841b393f0ae8e5aefdf
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -327,7 +510,7 @@ MonoBehaviour:
     m_lastTime: -8585566662460700386
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000c0000000d0000001200000018000000190000001c0000002d0000003000000036000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000c0000000d0000001100000012000000130000001600000018000000190000001c000000220000002d000000300000003500000036000000780000007d0000001101000018010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -36,6 +36,7 @@ public class Gun : MonoBehaviour
         {
             nextTimeToFire = Time.time + 1f / fireRate;
             PistolShoot();
+            AkSoundEngine.PostEvent("Play_Weapon1", gameObject);
         }
         //Shoot when mouse2 pressed and shoot delay is over, reset timer
         //Pistol shoot mode

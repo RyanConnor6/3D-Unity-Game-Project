@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (speed > 1)
                 {
-                    if (Time.time - lastFootstepTime > 400 / speed * Time.deltaTime)
+                    if (Time.time - lastFootstepTime > 500 / speed * Time.deltaTime)
                     {
                         footstepIsPlaying = false;
                     }
@@ -81,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (speed > 1)
                 {
-                    if (Time.time - lastFootstepTime > 400 / speed * Time.deltaTime)
+                    if (Time.time - lastFootstepTime > 500 / speed * Time.deltaTime)
                     {
                         footstepIsPlaying = false;
                     }
@@ -101,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (speed > 1)
                 {
-                    if (Time.time - lastFootstepTime > 400 / speed * Time.deltaTime)
+                    if (Time.time - lastFootstepTime > 500 / speed * Time.deltaTime)
                     {
                         footstepIsPlaying = false;
                     }
@@ -121,7 +121,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (speed > 1)
                 {
-                    if (Time.time - lastFootstepTime > 400 / speed * Time.deltaTime)
+                    if (Time.time - lastFootstepTime > 500 / speed * Time.deltaTime)
                     {
                         footstepIsPlaying = false;
                     }
