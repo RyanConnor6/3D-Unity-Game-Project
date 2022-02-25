@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 109379090843436836}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: BulletSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 109379090874586830}
   - component: {fileID: 109379090874586831}
   - component: {fileID: 109379090874586824}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 109379091553420263}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 109379091606280685}
   - component: {fileID: 109379091606280467}
   - component: {fileID: 109379091606280684}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Shape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 109379091958525635}
   - component: {fileID: 109379091958525660}
   - component: {fileID: 109379091958525633}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -344,7 +344,6 @@ MonoBehaviour:
   damage: 10
   range: 100
   fireRate: 1
-  impactForce: 30
   fpscamera: {fileID: 109379092200606094}
   muzzleflash: {fileID: 235544677213257174}
   impactEffect: {fileID: 1329845292236604, guid: 9bba9cf244c53c5439505dfc96fdd11c, type: 3}
@@ -363,7 +362,7 @@ GameObject:
   - component: {fileID: 109379092200606094}
   - component: {fileID: 109379092200606095}
   - component: {fileID: 109379092200606088}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -463,11 +462,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1743301284569550, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1992675705445476, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
       propertyPath: m_RootOrder

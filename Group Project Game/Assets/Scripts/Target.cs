@@ -11,11 +11,15 @@ public class Target : MonoBehaviour
     public GameObject healthBarUI;
     public Slider slider;
 
+    //SceneController
+    public GameObject SceneController;
+
     void Start()
     {
         //Instantiate
         health = maxHealth;
         slider.value = CalculateHealth();
+        SceneController = GameObject.Find("SceneController");
     }
 
     void Update()
@@ -26,13 +30,14 @@ public class Target : MonoBehaviour
         //Keep UI active
         if (health < maxHealth)
         {
-            healthBarUI.SetActive(true); 
+            healthBarUI.SetActive(true);
         }
 
         //Destroy when no health
         if (health <= 0)
         {
             Destroy(gameObject);
+            SceneController.GetComponent<SceneController>().enemiesLeft--;
         }
     }
 

@@ -7,6 +7,7 @@ public class SceneController : MonoBehaviour
     //Variables to use throughout scene
     public int numberOfColours;
     public int timeBetweenSwitches;
+    public int enemiesLeft;
 
     // Start is called before the first frame update
     void Start()

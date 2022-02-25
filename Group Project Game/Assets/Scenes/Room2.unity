@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4660946, g: 0.4657923, b: 0.46188927, a: 1}
+  m_IndirectSpecularColor: {r: 0.466138, g: 0.46583652, b: 0.46193022, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -825,7 +825,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1.1693954, z: 1}
-  m_Center: {x: 0, y: 0.08469772, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &194926263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -965,7 +965,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1.1698189, z: 1}
-  m_Center: {x: 0, y: 0.08490944, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &197875308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1345,7 +1345,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1.1693954, z: 1}
-  m_Center: {x: 0, y: 0.08469772, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &268300745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1472,7 +1472,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1.1693954, z: 1}
-  m_Center: {x: 0, y: 0.08469772, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &302202992
 GameObject:
   m_ObjectHideFlags: 0
@@ -2605,19 +2605,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 108832073479979330, guid: 94ab8c7e4b2e6e247a41c9e72c75b814, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 109075847195884776, guid: 94ab8c7e4b2e6e247a41c9e72c75b814, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 109379090843436837, guid: 94ab8c7e4b2e6e247a41c9e72c75b814, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 109379090874586825, guid: 94ab8c7e4b2e6e247a41c9e72c75b814, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 109379090874586829, guid: 94ab8c7e4b2e6e247a41c9e72c75b814, type: 3}
       propertyPath: m_RootOrder
@@ -2649,19 +2649,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 109379091553420256, guid: 94ab8c7e4b2e6e247a41c9e72c75b814, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 109379091606280686, guid: 94ab8c7e4b2e6e247a41c9e72c75b814, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 109379091958525662, guid: 94ab8c7e4b2e6e247a41c9e72c75b814, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 109379092200606090, guid: 94ab8c7e4b2e6e247a41c9e72c75b814, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7883378075771490945, guid: 94ab8c7e4b2e6e247a41c9e72c75b814, type: 3}
       propertyPath: m_Layer
@@ -3668,7 +3668,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1.1693954, z: 1}
-  m_Center: {x: 0, y: 0.08469772, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &1037465413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4109,7 +4109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8091873180bc8d240afd8c3fc14af5da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 0}
   player: {fileID: 0}
 --- !u!65 &1325437665
 BoxCollider:
@@ -4201,7 +4200,7 @@ GameObject:
   - component: {fileID: 1335595975}
   - component: {fileID: 1335595974}
   - component: {fileID: 1335595973}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4236,8 +4235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8091873180bc8d240afd8c3fc14af5da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 1498617081}
 --- !u!65 &1335595975
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5495,7 +5493,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1.1698189, z: 1}
-  m_Center: {x: 0, y: 0.08490944, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!4 &1757823967 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1250206305267495153, guid: 45be9beb44801b941ae5865a92c79d9b, type: 3}
@@ -5589,7 +5587,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1.1698189, z: 1}
-  m_Center: {x: 0, y: 0.08490944, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &1787701020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5729,7 +5727,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1.1698189, z: 1}
-  m_Center: {x: 0, y: 0.08490944, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1788792624
 GameObject:
   m_ObjectHideFlags: 0
@@ -6296,7 +6294,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1.1698189, z: 1}
-  m_Center: {x: 0, y: 0.08490944, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1992930547
 GameObject:
   m_ObjectHideFlags: 0

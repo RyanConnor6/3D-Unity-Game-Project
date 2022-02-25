@@ -5,13 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class DeathPlane : MonoBehaviour
 {
-    // Variable to control the spawn point
-    public Transform spawnPoint;
     // Variable to control the player object
     public GameObject player;
 
-    public void OnTriggerEnter(Collider player)
+    //Reset level
+    public void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (other.gameObject == player)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 }
