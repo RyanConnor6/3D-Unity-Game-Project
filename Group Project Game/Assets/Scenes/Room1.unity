@@ -2768,6 +2768,10 @@ PrefabInstance:
       propertyPath: m_text
       value: '[Time]'
       objectReference: {fileID: 0}
+    - target: {fileID: 2492465540686451275, guid: 68dd064305bb1254a9ea11f85218fadb, type: 3}
+      propertyPath: SceneController
+      value: 
+      objectReference: {fileID: 1769697832}
     - target: {fileID: 2492465540850041691, guid: 68dd064305bb1254a9ea11f85218fadb, type: 3}
       propertyPath: sceneController
       value: 

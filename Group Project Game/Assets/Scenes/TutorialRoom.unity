@@ -2273,6 +2273,10 @@ PrefabInstance:
       propertyPath: sceneController
       value: 
       objectReference: {fileID: 374192865}
+    - target: {fileID: 2492465540686451275, guid: 68dd064305bb1254a9ea11f85218fadb, type: 3}
+      propertyPath: SceneController
+      value: 
+      objectReference: {fileID: 374192865}
     - target: {fileID: 2492465540850041691, guid: 68dd064305bb1254a9ea11f85218fadb, type: 3}
       propertyPath: sceneController
       value: 

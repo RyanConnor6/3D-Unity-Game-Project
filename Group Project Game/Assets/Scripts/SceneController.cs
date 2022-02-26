@@ -8,6 +8,7 @@ public class SceneController : MonoBehaviour
     public int numberOfColours;
     public int timeBetweenSwitches;
     public int enemiesLeft;
+    public float timeInLevel;
 
     // Start is called before the first frame update
     void Start()
