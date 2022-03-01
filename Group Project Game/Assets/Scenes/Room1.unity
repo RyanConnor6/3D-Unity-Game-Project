@@ -2691,6 +2691,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 1501085854329589}
   SceneController: {fileID: 0}
+  x: 62.59502
+  y: 6.836533
+  z: 1.245796
 --- !u!4 &993753964
 Transform:
   m_ObjectHideFlags: 0
