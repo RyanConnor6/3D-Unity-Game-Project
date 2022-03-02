@@ -3,18 +3,22 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System;
+using TMPro;
 
 //Class to countdown and restart level on 0
 public class Timer : MonoBehaviour
 {
     //Variables for TextBox and Target Time
-    public Text textbox;
+    public TMPro.TextMeshProUGUI textbox;
     public float targetTime = 60.0f;
+
+    //SceneController
+    public GameObject SceneController;
 
     //Get TextBox on start
     void Start()
     {
-        textbox = GetComponent<Text>();
+        targetTime = SceneController.GetComponent<SceneController>().timeInLevel;
     }
 
     //Every tick
@@ -37,7 +41,6 @@ public class Timer : MonoBehaviour
     //On timer end, reload scene
     void timerEnded()
     {
-        //UNCOMMENT TO RESET LEVEL UPON REACHING TIME
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

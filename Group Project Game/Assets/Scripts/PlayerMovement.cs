@@ -22,9 +22,6 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
-    //Boolean to toggle sprint
-    bool sprintToggle = false;
-
     // Update is called once per frame
     void Update()
     {
@@ -41,39 +38,32 @@ public class PlayerMovement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        //Move vector
-        Vector3 move = Vector3.ClampMagnitude((transform.right * x + transform.forward * z), 1f);
-
-        //Move player using vector based off speed
-        playerController.Move(move * speed * Time.deltaTime);
-
         //If player jumps and is on ground, change velocity to make them jump
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetKey(KeyCode.Space) && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
         //If player presses left shift, toggle sprint status
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetButtonDown("left shift"))
         {
-            sprintToggle = sprintToggle ? false : true;
+            speed = 10;
         }
-
-        //Speed depending on if sprinting or not
-        if (sprintToggle == false)
+        else if (Input.GetButtonUp("left shift"))
         {
-            speed = 7f;
-        }
-        else
-        {
-            speed = 10f;
+            speed = 7;
         }
 
         //Add gravity
         velocity.y += gravity * Time.deltaTime;
 
         //Move player using velocity
-        playerController.Move(velocity * Time.deltaTime);
+        Vector3 move = transform.right * x * speed
+            + transform.forward * z * speed
+            + transform.up * velocity.y;
+
+
+        playerController.Move(move * Time.deltaTime);
 
         //Check if there is any object above player so they dont float when jumping under an object
         if ((playerController.collisionFlags & CollisionFlags.Above) != 0)
