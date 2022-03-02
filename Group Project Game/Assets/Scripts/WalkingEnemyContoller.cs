@@ -8,14 +8,14 @@ public class WalkingEnemyContoller : MonoBehaviour
 
 	public float lookradius = 10f;
 
-    Transform target;
+    public Transform target;
     NavMeshAgent agent;
 
     // Start is called before the first frame update
     void Start()
     {
         //sets the enmys target as the player
-        target = PlayerManager.instance.player.transform;
+        //target = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
     }
 
