@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class StairsToAppear : MonoBehaviour
 {
-    public GameObject Target;
     public GameObject SceneController;
+    public float x;
+    public float y;
+    public float z;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +20,7 @@ public class StairsToAppear : MonoBehaviour
     {
         if (SceneController.GetComponent<SceneController>().enemiesLeft == 0)
         {
-            transform.position = new Vector3(62.59502f, 6.836533f, 1.245796f);
+            transform.position = new Vector3(x, y, z);
         }
     }
 }

@@ -12,10 +12,13 @@ public class Timer : MonoBehaviour
     public TMPro.TextMeshProUGUI textbox;
     public float targetTime = 60.0f;
 
+    //SceneController
+    public GameObject SceneController;
+
     //Get TextBox on start
     void Start()
     {
-        //textbox = GetComponent<TMP_Text>();
+        targetTime = SceneController.GetComponent<SceneController>().timeInLevel;
     }
 
     //Every tick

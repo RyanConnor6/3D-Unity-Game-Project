@@ -47,6 +47,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberOfColours: 4
   timeBetweenSwitches: 3
+  enemiesLeft: 0
+  timeInLevel: 60
 --- !u!114 &8316224740965669779
 MonoBehaviour:
   m_ObjectHideFlags: 0
