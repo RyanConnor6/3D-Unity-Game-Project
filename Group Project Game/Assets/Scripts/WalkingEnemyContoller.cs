@@ -11,6 +11,9 @@ public class WalkingEnemyContoller : MonoBehaviour
     public Transform target;
     NavMeshAgent agent;
 
+    public Animator m_Animator;
+    private bool walkAnim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,11 +27,18 @@ public class WalkingEnemyContoller : MonoBehaviour
     { //distance between player and enemy
         float distance = Vector3.Distance(target.position, transform.position);
 
+        walkAnim = false;
         //if the distance is less than the look radius then the enemy will chase the player
         if (distance <= lookradius)
         {
             agent.SetDestination(target.position);
+            walkAnim = true;
         }
+        if (walkAnim == false)
+            m_Animator.SetBool("TrackingPlayer", false);
+
+        if (walkAnim == true)
+            m_Animator.SetBool("TrackingPlayer", true);
         // If within attacking distance
         //if (distance <= agent.stoppingDistance)
         //{

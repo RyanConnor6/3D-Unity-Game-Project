@@ -161,7 +161,6 @@ public class Gun : MonoBehaviour
         if (shootAnim == false)
             m_Animator.SetBool("Shoot", false);
 
-        //The GameObject is jumping, so send the Boolean as enabled to the Animator. The jump animation plays.
         if (shootAnim == true)
             m_Animator.SetBool("Shoot", true);
     }
