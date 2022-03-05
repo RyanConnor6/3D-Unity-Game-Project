@@ -16,6 +16,9 @@ public class Gun : MonoBehaviour
     public ParticleSystem muzzleflash;
     public GameObject impactEffect;
     public Transform BulletSpawnPoint;
+    public GameObject defaultGun;
+    public GameObject shotgun;
+    public GameObject pistol;
 
     //Bullet trail
     [SerializeField]
@@ -31,7 +34,12 @@ public class Gun : MonoBehaviour
     //Gun selected
     private int gunChosen = 0;
 
-    //IMPORTANT: WILL BE ADDING STUFF SO GUNS WILL BE UNLOCKED IN LATER LEVELS OR WHATEVER, AKA SNIPER ON LVL2 SHOTGUN LVL4 ETC. MINIGUN MODE COULD BE USED IN FINAL BOSS FIGHT??
+    void Start()
+    {
+        pistol.SetActive(true);
+        defaultGun.SetActive(false);
+        shotgun.SetActive(false);
+    }
 
     // Update is called once per frame
     void Update()
@@ -49,6 +57,9 @@ public class Gun : MonoBehaviour
             damage = 10f;
             range = 100f;
             fireRate = 0.7f;
+            defaultGun.SetActive(false);
+            shotgun.SetActive(false);
+            pistol.SetActive(true);
         }
         //Sniper (High Damage, Low fire rate)
         if (Input.GetKeyDown("2"))
@@ -61,6 +72,9 @@ public class Gun : MonoBehaviour
             damage = 30f;
             range = 100f;
             fireRate = 0.3f;
+            defaultGun.SetActive(true);
+            shotgun.SetActive(false);
+            pistol.SetActive(false);
         }
         //Shotgun (Large Damage, Medium fire rate, Scattered shots)
         if (Input.GetKeyDown("3"))
@@ -74,6 +88,9 @@ public class Gun : MonoBehaviour
             range = 100f;
             fireRate = 1f;
             BulletSpreadVariance = new Vector3(0.1f, 0.1f, 0.1f);
+            defaultGun.SetActive(false);
+            pistol.SetActive(false);
+            shotgun.SetActive(true);
         }
         //Fast Fire Rate Weapon (Low damage, High fire rate)
         if (Input.GetKeyDown("4"))
@@ -86,6 +103,9 @@ public class Gun : MonoBehaviour
             damage = 0.5f;
             range = 100f;
             fireRate = 25f;
+            defaultGun.SetActive(true);
+            shotgun.SetActive(false);
+            pistol.SetActive(false);
         }    
 
         //Ran out of ammo, add delay to next fire time
