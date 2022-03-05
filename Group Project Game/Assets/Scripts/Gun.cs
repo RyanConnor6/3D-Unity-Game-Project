@@ -34,11 +34,18 @@ public class Gun : MonoBehaviour
     //Gun selected
     private int gunChosen = 0;
 
+    //Animator
+    private Animator m_Animator;
+    private bool shootAnim;
+
     void Start()
     {
         pistol.SetActive(true);
         defaultGun.SetActive(false);
         shotgun.SetActive(false);
+        m_Animator = gameObject.GetComponent<Animator>();
+        // The GameObject cannot jump
+        shootAnim = false;
     }
 
     // Update is called once per frame
@@ -115,12 +122,15 @@ public class Gun : MonoBehaviour
             bullets = 20f;
         }
 
+        shootAnim = false;
+
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
         //Pistol shoot mode
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire && gunChosen == 0)
         {
             nextTimeToFire = Time.time + 1f / fireRate;
             PistolShoot();
+            shootAnim = true;
         }
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
         //Sniper shoot mode
@@ -128,6 +138,7 @@ public class Gun : MonoBehaviour
         {
             nextTimeToFire = Time.time + 1f / fireRate;
             PistolShoot();
+            shootAnim = true;
         }
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
         //Shotgun shoot mode
@@ -135,6 +146,7 @@ public class Gun : MonoBehaviour
         {
             nextTimeToFire = Time.time + 1f / fireRate;
             ShotgunShoot();
+            shootAnim = true;
         }
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
         //AR shoot mode
@@ -143,7 +155,15 @@ public class Gun : MonoBehaviour
             bullets--;
             nextTimeToFire = Time.time + 1f / fireRate;
             PistolShoot();
+            shootAnim = true;
         }
+
+        if (shootAnim == false)
+            m_Animator.SetBool("Shoot", false);
+
+        //The GameObject is jumping, so send the Boolean as enabled to the Animator. The jump animation plays.
+        if (shootAnim == true)
+            m_Animator.SetBool("Shoot", true);
     }
 
     //Pistol shoot
