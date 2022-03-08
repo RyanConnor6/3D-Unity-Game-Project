@@ -30,11 +30,11 @@ public class BlueInverted : MonoBehaviour
     IEnumerator FirstCycle()
     {
         gameObject.GetComponent<BoxCollider>().enabled = true;
-        rend.material = InactiveMaterial;
+        rend.material = ActiveMaterial;
         yield return new WaitForSeconds(timeBetweenSwitches);
 
         gameObject.GetComponent<BoxCollider>().enabled = false;
-        rend.material = ActiveMaterial;
+        rend.material = InactiveMaterial;
         yield return new WaitForSeconds(timeBetweenSwitches);
         StartCoroutine(ColourCycle());
     }
@@ -44,7 +44,7 @@ public class BlueInverted : MonoBehaviour
         while (true)
         {
             gameObject.GetComponent<BoxCollider>().enabled = true;
-            rend.material = InactiveMaterial;
+            rend.material = ActiveMaterial;
             yield return new WaitForSeconds(timeBetweenSwitches);
 
             if (numberOfColours > 2)
@@ -57,7 +57,7 @@ public class BlueInverted : MonoBehaviour
             }
 
             gameObject.GetComponent<BoxCollider>().enabled = false;
-            rend.material = ActiveMaterial;
+            rend.material = InactiveMaterial;
             yield return new WaitForSeconds(timeBetweenSwitches);
         }
     }
