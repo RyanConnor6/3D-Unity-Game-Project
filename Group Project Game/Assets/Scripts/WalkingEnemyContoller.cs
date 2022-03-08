@@ -5,11 +5,17 @@ using UnityEngine.AI;
 
 public class WalkingEnemyContoller : MonoBehaviour
 {
-
+    //Radius to look for player
 	public float lookradius = 10f;
 
+    //Target to follow and navmesh agent
     public Transform target;
     NavMeshAgent agent;
+
+    //Animation vars
+    public Animator m_Animator;
+    private bool walkAnim;
+    private Vector3 lastPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +23,10 @@ public class WalkingEnemyContoller : MonoBehaviour
         //sets the enmys target as the player
         //target = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
+
+        //Set up anim vars
+        lastPosition = transform.position;
+        walkAnim = false;
     }
 
     // Update is called once per frame
@@ -24,11 +34,31 @@ public class WalkingEnemyContoller : MonoBehaviour
     { //distance between player and enemy
         float distance = Vector3.Distance(target.position, transform.position);
 
+        //Disable walking
+        walkAnim = false;
+
         //if the distance is less than the look radius then the enemy will chase the player
         if (distance <= lookradius)
         {
             agent.SetDestination(target.position);
         }
+
+        //Only walk if moving
+        if (transform.position != lastPosition)
+            walkAnim = true;
+        else
+            walkAnim = false;
+
+        //Get last position
+        lastPosition = transform.position;
+
+        //Set walking anim
+        if (walkAnim == false)
+            m_Animator.SetBool("TrackingPlayer", false);
+
+        if (walkAnim == true)
+            m_Animator.SetBool("TrackingPlayer", true);
+
         // If within attacking distance
         //if (distance <= agent.stoppingDistance)
         //{

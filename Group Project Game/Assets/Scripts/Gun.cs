@@ -16,6 +16,9 @@ public class Gun : MonoBehaviour
     public ParticleSystem muzzleflash;
     public GameObject impactEffect;
     public Transform BulletSpawnPoint;
+    public GameObject defaultGun;
+    public GameObject shotgun;
+    public GameObject pistol;
 
     //Bullet trail
     [SerializeField]
@@ -31,7 +34,19 @@ public class Gun : MonoBehaviour
     //Gun selected
     private int gunChosen = 0;
 
-    //IMPORTANT: WILL BE ADDING STUFF SO GUNS WILL BE UNLOCKED IN LATER LEVELS OR WHATEVER, AKA SNIPER ON LVL2 SHOTGUN LVL4 ETC. MINIGUN MODE COULD BE USED IN FINAL BOSS FIGHT??
+    //Animator
+    private Animator m_Animator;
+    private bool shootAnim;
+
+    void Start()
+    {
+        pistol.SetActive(true);
+        defaultGun.SetActive(false);
+        shotgun.SetActive(false);
+        m_Animator = gameObject.GetComponent<Animator>();
+        // The GameObject cannot jump
+        shootAnim = false;
+    }
 
     // Update is called once per frame
     void Update()
@@ -49,6 +64,9 @@ public class Gun : MonoBehaviour
             damage = 10f;
             range = 100f;
             fireRate = 0.7f;
+            defaultGun.SetActive(false);
+            shotgun.SetActive(false);
+            pistol.SetActive(true);
         }
         //Sniper (High Damage, Low fire rate)
         if (Input.GetKeyDown("2"))
@@ -61,6 +79,9 @@ public class Gun : MonoBehaviour
             damage = 30f;
             range = 100f;
             fireRate = 0.3f;
+            defaultGun.SetActive(true);
+            shotgun.SetActive(false);
+            pistol.SetActive(false);
         }
         //Shotgun (Large Damage, Medium fire rate, Scattered shots)
         if (Input.GetKeyDown("3"))
@@ -74,6 +95,9 @@ public class Gun : MonoBehaviour
             range = 100f;
             fireRate = 1f;
             BulletSpreadVariance = new Vector3(0.1f, 0.1f, 0.1f);
+            defaultGun.SetActive(false);
+            pistol.SetActive(false);
+            shotgun.SetActive(true);
         }
         //Fast Fire Rate Weapon (Low damage, High fire rate)
         if (Input.GetKeyDown("4"))
@@ -86,6 +110,9 @@ public class Gun : MonoBehaviour
             damage = 0.5f;
             range = 100f;
             fireRate = 25f;
+            defaultGun.SetActive(true);
+            shotgun.SetActive(false);
+            pistol.SetActive(false);
         }    
 
         //Ran out of ammo, add delay to next fire time
@@ -95,13 +122,15 @@ public class Gun : MonoBehaviour
             bullets = 20f;
         }
 
+        shootAnim = false;
+
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
         //Pistol shoot mode
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire && gunChosen == 0)
         {
             nextTimeToFire = Time.time + 1f / fireRate;
             PistolShoot();
-            AkSoundEngine.PostEvent("Play_Weapon1", gameObject);
+            shootAnim = true;
         }
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
         //Sniper shoot mode
@@ -109,6 +138,7 @@ public class Gun : MonoBehaviour
         {
             nextTimeToFire = Time.time + 1f / fireRate;
             PistolShoot();
+            shootAnim = true;
         }
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
         //Shotgun shoot mode
@@ -116,6 +146,7 @@ public class Gun : MonoBehaviour
         {
             nextTimeToFire = Time.time + 1f / fireRate;
             ShotgunShoot();
+            shootAnim = true;
         }
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
         //AR shoot mode
@@ -124,7 +155,14 @@ public class Gun : MonoBehaviour
             bullets--;
             nextTimeToFire = Time.time + 1f / fireRate;
             PistolShoot();
+            shootAnim = true;
         }
+
+        if (shootAnim == false)
+            m_Animator.SetBool("Shoot", false);
+
+        if (shootAnim == true)
+            m_Animator.SetBool("Shoot", true);
     }
 
     //Pistol shoot
