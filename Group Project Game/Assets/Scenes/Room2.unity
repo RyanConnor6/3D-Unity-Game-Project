@@ -2726,7 +2726,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4bce9b09a648dd242be2e9b26daaf5a7, type: 2}
+  - {fileID: 2100000, guid: 07553007ceddacc47bac6a131f3dc619, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3026,6 +3026,10 @@ PrefabInstance:
     - target: {fileID: 4329755793825298584, guid: c37b4d47795bebc49bf8d6201e592581, type: 3}
       propertyPath: m_Name
       value: (2 Cycle) Red Platform (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098512587846415257, guid: c37b4d47795bebc49bf8d6201e592581, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5098512587846415261, guid: c37b4d47795bebc49bf8d6201e592581, type: 3}
       propertyPath: timer
@@ -3688,7 +3692,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4bce9b09a648dd242be2e9b26daaf5a7, type: 2}
+  - {fileID: 2100000, guid: 07553007ceddacc47bac6a131f3dc619, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

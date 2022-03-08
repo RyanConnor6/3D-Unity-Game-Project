@@ -5790,7 +5790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09f492e98642d8a4484d6e192f4d6023, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: TitleScreen
+  sceneToLoad: Room7
 --- !u!65 &1576239522
 BoxCollider:
   m_ObjectHideFlags: 0
