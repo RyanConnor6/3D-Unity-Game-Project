@@ -12,6 +12,7 @@ public class YellowScript : MonoBehaviour
     private float numberOfColours;
     private float timeBetweenSwitches;
 
+
     // Start is called before the first frame update
     void Start()
     {

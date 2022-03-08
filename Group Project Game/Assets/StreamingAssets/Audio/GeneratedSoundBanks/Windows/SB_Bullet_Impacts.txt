@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4010092267	Play_Impact_2			\Default Work Unit\Play_Impact_2	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	608371025	Impact_2	E:\Unity and Wwise Projects\Group Project Game_WwiseProject\.cache\Windows\SFX\Impact_2_10C4C929.wem		\Actor-Mixer Hierarchy\Bullet_Impacts\Impact_2		50896
+

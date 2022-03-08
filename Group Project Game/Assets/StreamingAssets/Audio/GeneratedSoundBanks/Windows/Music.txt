@@ -1,0 +1,16 @@
+Event	ID	Name			Wwise Object Path	Notes
+	833230064	Play_Level_1			\Default Work Unit\Play_Level_1	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Default Work Unit\Music	
+
+State	ID	Name	State Group			Notes
+	582720662	Level1_HorizontalMusic	Music			
+	748895195	None	Music			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3686004508	Distance_Music			\Default Work Unit\Distance_Music	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	107978665	Distance Music	E:\Unity and Wwise Projects\Group Project Game_WwiseProject\.cache\Windows\SFX\Distance Music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\Music\Level_1\Distance Music		2304128
+

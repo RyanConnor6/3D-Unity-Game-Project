@@ -18,6 +18,18 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundmask;
 
+    [Header("Wwise Events")]
+    public AK.Wwise.Event myFootstep;
+
+    //Wwise
+    private bool footstepIsPlaying = false;
+    private float lastFootstepTime = 0;
+
+    private void Awake()
+    {
+        lastFootstepTime = Time.time;
+    }
+
     //Variables for velocity and variable to say whether the player is in air on on ground
     Vector3 velocity;
     bool isGrounded;
@@ -28,10 +40,93 @@ public class PlayerMovement : MonoBehaviour
         //Check if player is on ground
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundmask);
 
+
+
         //If they are velocity is -2
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
+
+        }
+
+        if (isGrounded && Input.GetKey("w"))
+        {
+            if (!footstepIsPlaying)
+            {
+                myFootstep.Post(gameObject);
+                lastFootstepTime = Time.time;
+                footstepIsPlaying = true;
+            }
+            else
+            {
+                if (speed > 1)
+                {
+                    if (Time.time - lastFootstepTime > 500 / speed * Time.deltaTime)
+                    {
+                        footstepIsPlaying = false;
+                    }
+                }
+            }
+        }
+
+        if (isGrounded && Input.GetKey("a"))
+        {
+            if (!footstepIsPlaying)
+            {
+                myFootstep.Post(gameObject);
+                lastFootstepTime = Time.time;
+                footstepIsPlaying = true;
+            }
+            else
+            {
+                if (speed > 1)
+                {
+                    if (Time.time - lastFootstepTime > 500 / speed * Time.deltaTime)
+                    {
+                        footstepIsPlaying = false;
+                    }
+                }
+            }
+        }
+
+        if (isGrounded && Input.GetKey("s"))
+        {
+            if (!footstepIsPlaying)
+            {
+                myFootstep.Post(gameObject);
+                lastFootstepTime = Time.time;
+                footstepIsPlaying = true;
+            }
+            else
+            {
+                if (speed > 1)
+                {
+                    if (Time.time - lastFootstepTime > 500 / speed * Time.deltaTime)
+                    {
+                        footstepIsPlaying = false;
+                    }
+                }
+            }
+        }
+
+        if (isGrounded && Input.GetKey("d"))
+        {
+            if (!footstepIsPlaying)
+            {
+                myFootstep.Post(gameObject);
+                lastFootstepTime = Time.time;
+                footstepIsPlaying = true;
+            }
+            else
+            {
+                if (speed > 1)
+                {
+                    if (Time.time - lastFootstepTime > 500 / speed * Time.deltaTime)
+                    {
+                        footstepIsPlaying = false;
+                    }
+                }
+            }
         }
 
         //Get axis in variables

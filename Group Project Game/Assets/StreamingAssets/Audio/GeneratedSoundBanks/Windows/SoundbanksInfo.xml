@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>E:\Unity and Wwise Projects\Group Project Game_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>E:\Unity and Wwise Projects\Group Project Game_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>E:\Unity and Wwise Projects\Group Project Game_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>E:\Unity and Wwise Projects\Group Project Game_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="494645853" Language="SFX" Hash="3826576562">
+			<ObjectPath>\SoundBanks\Pause\SB_Pause</ObjectPath>
+			<ShortName>SB_Pause</ShortName>
+			<Path>SB_Pause.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1496939652" Name="Play_Pause_Music" ObjectPath="\Events\Pause\Play_Pause_Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="601287123" Language="SFX">
+							<ShortName>Pause Music.wav</ShortName>
+							<Path>SFX\Pause Music_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="377695186" Name="Play_UI_Response" ObjectPath="\Events\Default Work Unit\Play_UI_Response" DurationType="OneShot" DurationMin="0.466354" DurationMax="0.466354">
+					<IncludedMemoryFiles>
+						<File Id="675154899" Language="SFX">
+							<ShortName>UI_Response.wav</ShortName>
+							<Path>SFX\UI_Response_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2718830246" Name="Stop_Pause_Music" ObjectPath="\Events\Pause\Stop_Pause_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="716559825" Language="SFX" Hash="552836011">
+			<ObjectPath>\SoundBanks\Bullet_Impacts\SB_Bullet_Impacts</ObjectPath>
+			<ShortName>SB_Bullet_Impacts</ShortName>
+			<Path>SB_Bullet_Impacts.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4010092267" Name="Play_Impact_2" ObjectPath="\Events\Default Work Unit\Play_Impact_2" DurationType="OneShot" DurationMin="0.264417" DurationMax="0.264417">
+					<IncludedMemoryFiles>
+						<File Id="608371025" Language="SFX">
+							<ShortName>Impact_2.wav</ShortName>
+							<Path>SFX\Impact_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="779278001" Language="SFX" Hash="3947225391">
+			<ObjectPath>\SoundBanks\Character\Death</ObjectPath>
+			<ShortName>Death</ShortName>
+			<Path>Death.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1087513048" Name="Play_Character_Death" ObjectPath="\Events\Default Work Unit\Play_Character_Death" DurationType="OneShot" DurationMin="0.435952" DurationMax="0.789309">
+					<IncludedMemoryFiles>
+						<File Id="27930295" Language="SFX">
+							<ShortName>Pain Grunt 2.wav</ShortName>
+							<Path>SFX\Pain Grunt 2_10C4C929.wem</Path>
+						</File>
+						<File Id="348702790" Language="SFX">
+							<ShortName>Pain Grunt 1.wav</ShortName>
+							<Path>SFX\Pain Grunt 1_10C4C929.wem</Path>
+						</File>
+						<File Id="454823175" Language="SFX">
+							<ShortName>Pain Grunt 5.wav</ShortName>
+							<Path>SFX\Pain Grunt 5_10C4C929.wem</Path>
+						</File>
+						<File Id="596179943" Language="SFX">
+							<ShortName>Pain Grunt 3.wav</ShortName>
+							<Path>SFX\Pain Grunt 3_10C4C929.wem</Path>
+						</File>
+						<File Id="854674241" Language="SFX">
+							<ShortName>Pain Grunt 4.wav</ShortName>
+							<Path>SFX\Pain Grunt 4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1689357572">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1467963052" Language="SFX" Hash="2783060097">
+			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
+			<ShortName>Weapons</ShortName>
+			<Path>Weapons.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3292839560" Name="Play_Weapon_3" ObjectPath="\Events\Default Work Unit\Play_Weapon_3" DurationType="OneShot" DurationMin="0.421031" DurationMax="0.531693">
+					<IncludedMemoryFiles>
+						<File Id="365210051" Language="SFX">
+							<ShortName>Weapon_3.wav</ShortName>
+							<Path>SFX\Weapon_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1481651908" Language="SFX" Hash="1343585092">
+			<ObjectPath>\SoundBanks\Colours\SB_Colours</ObjectPath>
+			<ShortName>SB_Colours</ShortName>
+			<Path>SB_Colours.bnk</Path>
+			<IncludedEvents>
+				<Event Id="341733316" Name="Play_Colour_Notification_Sound" ObjectPath="\Events\Colours\Play_Colour_Notification_Sound" DurationType="OneShot" DurationMin="2.259625" DurationMax="2.259625">
+					<IncludedMemoryFiles>
+						<File Id="1015316808" Language="SFX">
+							<ShortName>Colour Notification Sound.wav</ShortName>
+							<Path>SFX\Colour Notification Sound_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="2385628198" Language="SFX" Hash="3811454996">
+			<ObjectPath>\SoundBanks\Character\Footsteps</ObjectPath>
+			<ShortName>Footsteps</ShortName>
+			<Path>Footsteps.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Character\Play_Footsteps" DurationType="OneShot" DurationMin="0.371031" DurationMax="0.542923">
+					<IncludedMemoryFiles>
+						<File Id="140828028" Language="SFX">
+							<ShortName>Player_Footsteps 12.wav</ShortName>
+							<Path>SFX\Player_Footsteps 12_10C4C929.wem</Path>
+						</File>
+						<File Id="145237930" Language="SFX">
+							<ShortName>Player_Footsteps 3.wav</ShortName>
+							<Path>SFX\Player_Footsteps 3_10C4C929.wem</Path>
+						</File>
+						<File Id="148602402" Language="SFX">
+							<ShortName>Player_Footsteps 4.wav</ShortName>
+							<Path>SFX\Player_Footsteps 4_10C4C929.wem</Path>
+						</File>
+						<File Id="243777269" Language="SFX">
+							<ShortName>Player_Footsteps 7.wav</ShortName>
+							<Path>SFX\Player_Footsteps 7_10C4C929.wem</Path>
+						</File>
+						<File Id="320339600" Language="SFX">
+							<ShortName>Player_Footsteps 8.wav</ShortName>
+							<Path>SFX\Player_Footsteps 8_10C4C929.wem</Path>
+						</File>
+						<File Id="676058539" Language="SFX">
+							<ShortName>Player_Footsteps 5.wav</ShortName>
+							<Path>SFX\Player_Footsteps 5_10C4C929.wem</Path>
+						</File>
+						<File Id="753264850" Language="SFX">
+							<ShortName>Player_Footsteps 2.wav</ShortName>
+							<Path>SFX\Player_Footsteps 2_10C4C929.wem</Path>
+						</File>
+						<File Id="1006517814" Language="SFX">
+							<ShortName>Player_Footsteps 11.wav</ShortName>
+							<Path>SFX\Player_Footsteps 11_10C4C929.wem</Path>
+						</File>
+						<File Id="1013408102" Language="SFX">
+							<ShortName>Player_Footsteps 9.wav</ShortName>
+							<Path>SFX\Player_Footsteps 9_10C4C929.wem</Path>
+						</File>
+						<File Id="1028787627" Language="SFX">
+							<ShortName>Player_Footsteps 6.wav</ShortName>
+							<Path>SFX\Player_Footsteps 6_10C4C929.wem</Path>
+						</File>
+						<File Id="1064172713" Language="SFX">
+							<ShortName>Player_Footsteps 10.wav</ShortName>
+							<Path>SFX\Player_Footsteps 10_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX" Hash="885795626">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="833230064" Name="Play_Level_1" ObjectPath="\Events\Default Work Unit\Play_Level_1" DurationType="OneShot" DurationMin="13.061225" DurationMax="13.061225">
+					<IncludedMemoryFiles>
+						<File Id="107978665" Language="SFX">
+							<ShortName>Distance Music.wav</ShortName>
+							<Path>SFX\Distance Music_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3686004508" Name="Distance_Music" ObjectPath="\Game Parameters\Default Work Unit\Distance_Music"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

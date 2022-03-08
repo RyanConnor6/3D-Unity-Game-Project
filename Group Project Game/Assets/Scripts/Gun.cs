@@ -131,6 +131,7 @@ public class Gun : MonoBehaviour
             nextTimeToFire = Time.time + 1f / fireRate;
             PistolShoot();
             shootAnim = true;
+            AkSoundEngine.PostEvent("Play_Weapon_3", gameObject);
         }
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
         //Sniper shoot mode
