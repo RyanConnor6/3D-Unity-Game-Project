@@ -93,8 +93,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Character
     guid: 47cda029368755429c571be0a3c24dcf
     GuidInternal: 
-    m_lastTime: -8585566662460730331
+    m_lastTime: -8585556108969681123
     List:
+    - name: Death
+      guid: 41fa5a518316cd47b6cbf3da9d20495d
+      id: 779278001
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Character
+        ObjectType: 12
+        guid: 47cda029368755429c571be0a3c24dcf
+      - ElementName: Death
+        ObjectType: 7
+        guid: 41fa5a518316cd47b6cbf3da9d20495d
+      Path: SoundBanks\Character\Death
     - name: Footsteps
       guid: 8cb1c606e8276141b66b1a76d483ee9d
       id: 2385628198
@@ -174,7 +188,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Pause
     guid: 69a29d20a03e284993a6e4de3695558e
     GuidInternal: 
-    m_lastTime: -8585561340858949246
+    m_lastTime: -8585553565235397918
     List:
     - name: SB_Pause
       guid: fb88e3e33235c342842f11a69a4371e4
@@ -201,7 +215,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Weapons
     guid: 1f41bcb2b174354dab6723daa2174dc9
     GuidInternal: 
-    m_lastTime: -8585558053727039958
+    m_lastTime: -8585548466759411615
     List:
     - name: Weapons
       guid: ea54c59ebe700f4d92ba28c9cbac1d50
@@ -289,8 +303,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6f41478e812ae741a8698468adaf8e94
     GuidInternal: 
-    m_lastTime: -8585558020099861841
+    m_lastTime: -8585548466759351771
     List:
+    - name: Play_Character_Death
+      guid: e20321031b7fd34c8589c002922ae835
+      id: 1087513048
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f41478e812ae741a8698468adaf8e94
+      - ElementName: Play_Character_Death
+        ObjectType: 3
+        guid: e20321031b7fd34c8589c002922ae835
+      Path: Events\Default Work Unit\Play_Character_Death
+      maxAttenuation: 0
+      maxDuration: 0.789309
+      minDuration: 0.435952
     - name: Play_Impact_2
       guid: ce2e1be972834146870b5288f2396045
       id: 4010092267
@@ -325,9 +356,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 13.061225
       minDuration: 13.061225
-    - name: Play_Weapon1
-      guid: 36b2940691fa8145b30905ec5fd74ea6
-      id: 155002711
+    - name: Play_UI_Response
+      guid: ce82ba526c5ab646a4fa3e400b43807b
+      id: 377695186
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -335,10 +366,27 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 6f41478e812ae741a8698468adaf8e94
-      - ElementName: Play_Weapon1
+      - ElementName: Play_UI_Response
         ObjectType: 3
-        guid: 36b2940691fa8145b30905ec5fd74ea6
-      Path: Events\Default Work Unit\Play_Weapon1
+        guid: ce82ba526c5ab646a4fa3e400b43807b
+      Path: Events\Default Work Unit\Play_UI_Response
+      maxAttenuation: 0
+      maxDuration: 0.466354
+      minDuration: 0.466354
+    - name: Play_Weapon_3
+      guid: 910aaa0db777504297c65f4aa440246c
+      id: 3292839560
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f41478e812ae741a8698468adaf8e94
+      - ElementName: Play_Weapon_3
+        ObjectType: 3
+        guid: 910aaa0db777504297c65f4aa440246c
+      Path: Events\Default Work Unit\Play_Weapon_3
       maxAttenuation: 0
       maxDuration: 0.531693
       minDuration: 0.421031
@@ -370,8 +418,8 @@ MonoBehaviour:
         guid: d1d351314067874cadf14223bad29fa4
       Path: Events\Pause\Play_Pause_Music
       maxAttenuation: 0
-      maxDuration: 13.061225
-      minDuration: 13.061225
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Pause_Music
       guid: a368abd101850946a7388b2d38556b13
       id: 2718830246
@@ -510,7 +558,7 @@ MonoBehaviour:
     m_lastTime: -8585566662460700386
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000c0000000d0000001100000012000000130000001600000018000000190000001c000000220000002d000000300000003500000036000000780000007d0000001101000018010000
+  ExpandedWaapiItemIds: 0600000007000000170000001a00000023000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
