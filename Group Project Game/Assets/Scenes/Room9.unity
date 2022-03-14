@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4660946, g: 0.4657923, b: 0.46188927, a: 1}
+  m_IndirectSpecularColor: {r: 0.466138, g: 0.46583652, b: 0.46193022, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5876,6 +5876,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94ab8c7e4b2e6e247a41c9e72c75b814, type: 3}
+--- !u!1 &506298821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 109379090874586825, guid: 94ab8c7e4b2e6e247a41c9e72c75b814, type: 3}
+  m_PrefabInstance: {fileID: 503162012}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &514025267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9204,7 +9209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09f492e98642d8a4484d6e192f4d6023, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: TitleScreen
+  sceneToLoad: Room10
 --- !u!65 &823735649
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15715,6 +15720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallLevelOutline
       objectReference: {fileID: 0}
+    - target: {fileID: 8326252186455568031, guid: c2d6aa2125be13a4494861ebf5b99742, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 506298821}
     - target: {fileID: 8827004565142371266, guid: c2d6aa2125be13a4494861ebf5b99742, type: 3}
       propertyPath: m_LocalPosition.z
       value: -19.29
