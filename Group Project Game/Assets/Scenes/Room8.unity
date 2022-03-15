@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.466138, g: 0.46583652, b: 0.46193022, a: 1}
+  m_IndirectSpecularColor: {r: 0.4660946, g: 0.4657923, b: 0.46188927, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -785,7 +785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09f492e98642d8a4484d6e192f4d6023, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: TitleScreen
+  sceneToLoad: Room9
 --- !u!65 &149607226
 BoxCollider:
   m_ObjectHideFlags: 0
