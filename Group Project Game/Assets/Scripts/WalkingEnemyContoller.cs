@@ -14,7 +14,7 @@ public class WalkingEnemyContoller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //sets the enmys target as the player
+        //sets the enemys target as the player
         target = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
     }
