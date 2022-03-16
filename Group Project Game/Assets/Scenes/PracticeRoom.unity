@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.46613818, g: 0.46583682, b: 0.46193033, a: 1}
+  m_IndirectSpecularColor: {r: 0.466138, g: 0.46583652, b: 0.46193022, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -234,6 +234,11 @@ MonoBehaviour:
   InactiveMaterial: {fileID: 2100000, guid: 34c4b7817d9d97d439480624865f4a2b, type: 2}
   ActiveMaterial: {fileID: 2100000, guid: 92532cce55c47d74c87cd1e9338adb34, type: 2}
   sceneController: {fileID: 374192865}
+--- !u!1 &53289203 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1845932596538001273, guid: 94ab8c7e4b2e6e247a41c9e72c75b814, type: 3}
+  m_PrefabInstance: {fileID: 1962874533}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &109008976
 GameObject:
   m_ObjectHideFlags: 0
@@ -2532,6 +2537,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 13.300049
       objectReference: {fileID: 0}
+    - target: {fileID: 242049470635124618, guid: 47d3e089e9d1c5840abbd9a5d4541762, type: 3}
+      propertyPath: Gun
+      value: 
+      objectReference: {fileID: 53289203}
     - target: {fileID: 2585301158234410357, guid: 47d3e089e9d1c5840abbd9a5d4541762, type: 3}
       propertyPath: sceneController
       value: 

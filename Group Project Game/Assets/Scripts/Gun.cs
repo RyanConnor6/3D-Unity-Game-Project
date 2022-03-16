@@ -9,16 +9,17 @@ public class Gun : MonoBehaviour
     public float damage = 10f;
     public float range = 100f;
     public float fireRate = 1f;
-    private float bullets = 1f;
+    public float bullets = 6f;
 
     //FX and other variables
     public Camera fpscamera;
     public ParticleSystem muzzleflash;
     public GameObject impactEffect;
     public Transform BulletSpawnPoint;
-    public GameObject defaultGun;
     public GameObject shotgun;
     public GameObject pistol;
+    public GameObject sniper;
+    public GameObject vector;
 
     //Bullet trail
     [SerializeField]
@@ -40,9 +41,10 @@ public class Gun : MonoBehaviour
 
     void Start()
     {
-        pistol.SetActive(true);
-        defaultGun.SetActive(false);
+        sniper.SetActive(false);
+        vector.SetActive(false);
         shotgun.SetActive(false);
+        pistol.SetActive(true);
         m_Animator = gameObject.GetComponent<Animator>();
         // The GameObject cannot jump
         shootAnim = false;
@@ -56,15 +58,16 @@ public class Gun : MonoBehaviour
         //Pistol (Medium damage, Medium fire rate)
         if (Input.GetKeyDown("1"))
         {
-            bullets = 1f;
+            bullets = 6f;
             gunChosen = 0;
             //Weapon swap time
             nextTimeToFire = Time.time + 1f;
             //Gun stats
-            damage = 10f;
+            damage = 4f;
             range = 100f;
             fireRate = 0.7f;
-            defaultGun.SetActive(false);
+            sniper.SetActive(false);
+            vector.SetActive(false);
             shotgun.SetActive(false);
             pistol.SetActive(true);
         }
@@ -78,26 +81,28 @@ public class Gun : MonoBehaviour
             //Gun stats
             damage = 30f;
             range = 100f;
-            fireRate = 0.3f;
-            defaultGun.SetActive(true);
+            fireRate = 0.4f;
+            sniper.SetActive(true);
+            vector.SetActive(false);
             shotgun.SetActive(false);
             pistol.SetActive(false);
         }
         //Shotgun (Large Damage, Medium fire rate, Scattered shots)
         if (Input.GetKeyDown("3"))
         {
-            bullets = 1f;
+            bullets = 3f;
             gunChosen = 1;
             //Weapon swap time
             nextTimeToFire = Time.time + 1f;
             //Gun stats
-            damage = 3f;
+            damage = 2.5f;
             range = 100f;
-            fireRate = 1f;
+            fireRate = 1.7f;
             BulletSpreadVariance = new Vector3(0.1f, 0.1f, 0.1f);
-            defaultGun.SetActive(false);
-            pistol.SetActive(false);
+            sniper.SetActive(false);
+            vector.SetActive(false);
             shotgun.SetActive(true);
+            pistol.SetActive(false);
         }
         //Fast Fire Rate Weapon (Low damage, High fire rate)
         if (Input.GetKeyDown("4"))
@@ -107,29 +112,59 @@ public class Gun : MonoBehaviour
             //Weapon swap time
             nextTimeToFire = Time.time + 1f;
             //Gun stats
-            damage = 0.5f;
+            damage = 7f;
             range = 100f;
-            fireRate = 25f;
-            defaultGun.SetActive(true);
+            fireRate = 15f;
+            sniper.SetActive(false);
+            vector.SetActive(true);
             shotgun.SetActive(false);
             pistol.SetActive(false);
         }    
 
         //Ran out of ammo, add delay to next fire time
-        if (bullets == 0)
+        if (bullets == 0 && gunChosen == 0)
+        {
+            nextTimeToFire = Time.time + 2f;
+            bullets = 6f;
+        }
+        if (bullets == 0 && gunChosen == 1)
+        {
+            nextTimeToFire = Time.time + 2f;
+            bullets = 3f;
+        }
+        if (bullets == 0 && gunChosen == 2)
         {
             nextTimeToFire = Time.time + 1f;
             bullets = 20f;
         }
 
+
+        if (Input.GetKeyDown(KeyCode.R) && gunChosen == 0)
+        {
+            nextTimeToFire = Time.time + 2f;
+            bullets = 6f;
+        }
+        if (Input.GetKeyDown(KeyCode.R) && gunChosen == 1)
+        {
+            nextTimeToFire = Time.time + 2f;
+            bullets = 3f;
+        }
+        if (Input.GetKeyDown(KeyCode.R) && gunChosen == 2)
+        {
+            nextTimeToFire = Time.time + 1f;
+            bullets = 20f;
+        }
+
+
         shootAnim = false;
 
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
         //Pistol shoot mode
-        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire && gunChosen == 0)
+        if (Input.GetButtonDown("Fire1") && Time.time >= nextTimeToFire && gunChosen == 0)
         {
-            nextTimeToFire = Time.time + 1f / fireRate;
-            PistolShoot();
+            nextTimeToFire = 0f;
+            bullets--;
+            NormalShoot();
             shootAnim = true;
         }
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
@@ -137,7 +172,7 @@ public class Gun : MonoBehaviour
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire && gunChosen == 3)
         {
             nextTimeToFire = Time.time + 1f / fireRate;
-            PistolShoot();
+            NormalShoot();
             shootAnim = true;
         }
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
@@ -145,7 +180,8 @@ public class Gun : MonoBehaviour
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire && gunChosen == 1)
         {
             nextTimeToFire = Time.time + 1f / fireRate;
-            ShotgunShoot();
+            bullets--;
+            ScatterShot();
             shootAnim = true;
         }
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
@@ -154,7 +190,7 @@ public class Gun : MonoBehaviour
         {
             bullets--;
             nextTimeToFire = Time.time + 1f / fireRate;
-            PistolShoot();
+            NormalShoot();
             shootAnim = true;
         }
 
@@ -165,8 +201,8 @@ public class Gun : MonoBehaviour
             m_Animator.SetBool("Shoot", true);
     }
 
-    //Pistol shoot
-    void PistolShoot()
+    //normal shoot mode
+    void NormalShoot()
     {
         //Play shoot FX
         muzzleflash.Play();
@@ -204,7 +240,8 @@ public class Gun : MonoBehaviour
 
     }
 
-    void ShotgunShoot()
+    //Shotgun scatter shot
+    void ScatterShot()
     {
         //Play shoot FX
         muzzleflash.Play();
