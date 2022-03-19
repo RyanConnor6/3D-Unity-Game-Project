@@ -5073,6 +5073,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Target
       objectReference: {fileID: 0}
+    - target: {fileID: 4915075376436059738, guid: 74f4c2f6a179bc149877f22c63338c28, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0485
+      objectReference: {fileID: 0}
     - target: {fileID: 4915075376610561075, guid: 74f4c2f6a179bc149877f22c63338c28, type: 3}
       propertyPath: health
       value: 8
