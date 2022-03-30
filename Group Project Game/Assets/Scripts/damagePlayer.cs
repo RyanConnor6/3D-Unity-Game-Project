@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class damagePlayer : MonoBehaviour
 {
@@ -14,15 +15,22 @@ public class damagePlayer : MonoBehaviour
         healthBar.SetHealth(playerHealth);
     }
 
-    void onCollisionEnter(Collision _Collision)
+    void Update()
     {
-        if (_Collision.gameObject.tag=="Enemy")
+        if (playerHealth < 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.gameObject.tag == "Enemy")
         {
             print(playerHealth);
-            playerHealth-=damage;
+            playerHealth -= damage;
 
             healthBar.SetHealth(playerHealth);
         }
-        
     }
 }
