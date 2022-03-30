@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class damagePlayer : MonoBehaviour
 {
-    public int playerHealth=80;
+    public int playerHealth=100;
     int damage=5;
 
     public HealthBar healthBar;
