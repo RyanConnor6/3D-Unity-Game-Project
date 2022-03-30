@@ -11,7 +11,7 @@ public class ShootingEnemyController : MonoBehaviour
 
     public Transform player;
 
-    public LayerMask whatIsGround, whatIsPlayer;
+    public LayerMask whatIsGround;//, whatIsPlayer;
 
     public float health;
 
@@ -27,17 +27,22 @@ public class ShootingEnemyController : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.Find("PlayerObj").transform;
+        //player = GameObject.Find("PlayerObj").transform;
         agent = GetComponent<NavMeshAgent>();
     }
 
     private void Update()
     {
         //Check for sight and attack range
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+        //playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
 
-        if (playerInAttackRange && playerInSightRange) AttackPlayer();
+        float distance = Vector3.Distance(player.position, transform.position);
+
+        //if the distance is less than the look radius then the enemy will chase the player
+        if (distance <= attackRange)
+        {
+            AttackPlayer();
+        }
     }
 
     private void ChasePlayer()
