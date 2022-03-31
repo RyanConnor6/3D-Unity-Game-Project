@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.466138, g: 0.46583652, b: 0.46193022, a: 1}
+  m_IndirectSpecularColor: {r: 0.4660946, g: 0.4657923, b: 0.46188927, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -663,6 +663,7 @@ GameObject:
   - component: {fileID: 534400951}
   - component: {fileID: 534400952}
   - component: {fileID: 534400953}
+  - component: {fileID: 534400954}
   m_Layer: 0
   m_Name: TempMiniBoss
   m_TagString: Untagged
@@ -678,7 +679,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534400950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.497633, y: 15.412924, z: -8.019619}
+  m_LocalPosition: {x: -4.497633, y: 15.41292, z: -8.019619}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1631842362}
@@ -717,6 +718,25 @@ CapsuleCollider:
   m_Height: 28
   m_Direction: 1
   m_Center: {x: 0, y: -2, z: 8}
+--- !u!95 &534400954
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534400950}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6e11733c1ce85db499a31967a83eaff5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &602736519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -798,7 +818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8316224740965669778, guid: 9d880fea93c073c45b54498504dfaf58, type: 3}
       propertyPath: timeBetweenSwitches
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8316224740965669779, guid: 9d880fea93c073c45b54498504dfaf58, type: 3}
       propertyPath: pauseText
@@ -1767,7 +1787,7 @@ RectTransform:
   m_GameObject: {fileID: 1559584486}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -0.15194729, y: -0.0821731, z: -0.017099}
+  m_LocalScale: {x: -0.60967904, y: -4.6986537, z: -0.017099}
   m_Children:
   - {fileID: 1083561011}
   - {fileID: 1731271375}
@@ -1967,7 +1987,7 @@ RectTransform:
   m_GameObject: {fileID: 1631842361}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.13866, y: -0.022576777, z: 1}
   m_Children:
   - {fileID: 1559584488}
   m_Father: {fileID: 534400951}
@@ -1975,7 +1995,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 10.47}
+  m_AnchoredPosition: {x: 0, y: 11.77}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1631842363
