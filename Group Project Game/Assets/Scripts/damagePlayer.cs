@@ -8,7 +8,10 @@ public class damagePlayer : MonoBehaviour
     public int playerHealth=100;
     int damage=5;
 
+    public int playerArmour = 50;
+
     public HealthBar healthBar;
+    public ArmourBar armourBar;
 
     void Start()
     {
@@ -27,10 +30,21 @@ public class damagePlayer : MonoBehaviour
     {
         if (other.gameObject.gameObject.tag == "Enemy")
         {
-            print(playerHealth);
-            playerHealth -= damage;
+            if (playerArmour > 0)
+            {
+                print(playerArmour);
+                playerArmour -= damage;
 
-            healthBar.SetHealth(playerHealth);
+                armourBar.SetArmour(playerArmour);
+            }
+            else
+            {
+                print(playerHealth);
+                playerHealth -= damage;
+
+                healthBar.SetHealth(playerHealth);
+            }
+            
         }
     }
 }
