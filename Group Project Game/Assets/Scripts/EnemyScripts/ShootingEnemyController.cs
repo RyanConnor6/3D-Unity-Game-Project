@@ -9,6 +9,8 @@ public class ShootingEnemyController : MonoBehaviour
 
     public NavMeshAgent agent;
 
+    public GameObject bulletSpawn;
+
     public Transform player;
 
     public LayerMask whatIsGround;//, whatIsPlayer;
@@ -60,9 +62,9 @@ public class ShootingEnemyController : MonoBehaviour
         if (!alreadyAttacked)
         {
             ///Attack code here
-            Rigidbody rb = Instantiate(bullet, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+            Rigidbody rb = Instantiate(bullet, bulletSpawn.transform.position, Quaternion.identity).GetComponent<Rigidbody>();
             rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.AddForce(transform.up * 8f, ForceMode.Impulse);
+            rb.AddForce(transform.up * -2f, ForceMode.Impulse);
             ///End of attack code
 
             alreadyAttacked = true;

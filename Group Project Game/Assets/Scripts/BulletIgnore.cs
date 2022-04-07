@@ -25,7 +25,7 @@ public class BulletIgnore : MonoBehaviour
         }
         else
         {
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 }
