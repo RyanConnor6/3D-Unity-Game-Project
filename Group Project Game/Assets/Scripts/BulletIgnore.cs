@@ -17,9 +17,15 @@ public class BulletIgnore : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider other)
     {
-        //Destroy bullet on collision
-        Destroy(gameObject);
+        if (other.gameObject.name == "Player")
+        {
+            Debug.Log("Collision Detected");
+        }
+        else
+        {
+            //Destroy(gameObject);
+        }
     }
 }
