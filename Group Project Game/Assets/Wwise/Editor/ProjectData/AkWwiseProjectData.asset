@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 3bf9942ef8587140a516c37f3915664f
     GuidInternal: 
-    m_lastTime: -8585566662460700386
+    m_lastTime: -8585520136254775808
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 0ee21df9c798fc40a3fdcdddbbfd63c7
     GuidInternal: 
-    m_lastTime: -8585566662460979662
+    m_lastTime: -8585520136854775808
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Bullet_Impacts
     guid: 11ce4b6a1d9bfe48b96f74cf4af7062a
     GuidInternal: 
-    m_lastTime: -8585558053726970145
+    m_lastTime: -8585519796849162272
     List:
     - name: SB_Bullet_Impacts
       guid: 956a71edfe5eac4f9c55d962d38b7129
@@ -93,22 +93,8 @@ MonoBehaviour:
     ParentPath: SoundBanks\Character
     guid: 47cda029368755429c571be0a3c24dcf
     GuidInternal: 
-    m_lastTime: -8585556108969681123
+    m_lastTime: -8585520136254775808
     List:
-    - name: Death
-      guid: 41fa5a518316cd47b6cbf3da9d20495d
-      id: 779278001
-      PathAndIcons:
-      - ElementName: SoundBanks
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Character
-        ObjectType: 12
-        guid: 47cda029368755429c571be0a3c24dcf
-      - ElementName: Death
-        ObjectType: 7
-        guid: 41fa5a518316cd47b6cbf3da9d20495d
-      Path: SoundBanks\Character\Death
     - name: Footsteps
       guid: 8cb1c606e8276141b66b1a76d483ee9d
       id: 2385628198
@@ -134,7 +120,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Colours
     guid: 0a7303a0bcf5d940bf999e197d8b582b
     GuidInternal: 
-    m_lastTime: -8585561370307251447
+    m_lastTime: -8585520136254775808
     List:
     - name: SB_Colours
       guid: cb9df620e072274cbfc742fbb1bc5507
@@ -161,22 +147,8 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5a4144645d1223459f373a531253f549
     GuidInternal: 
-    m_lastTime: -8585558020099831920
-    List:
-    - name: Music
-      guid: c0dc003ec7ca8244a93275ac789e3cfb
-      id: 3991942870
-      PathAndIcons:
-      - ElementName: SoundBanks
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 5a4144645d1223459f373a531253f549
-      - ElementName: Music
-        ObjectType: 7
-        guid: c0dc003ec7ca8244a93275ac789e3cfb
-      Path: SoundBanks\Default Work Unit\Music
+    m_lastTime: -8585520136254775808
+    List: []
   - PhysicalPath: SoundBanks\Pause.wwu
     PathAndIcons:
     - ElementName: SoundBanks
@@ -188,7 +160,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Pause
     guid: 69a29d20a03e284993a6e4de3695558e
     GuidInternal: 
-    m_lastTime: -8585553565235397918
+    m_lastTime: -8585520136254775808
     List:
     - name: SB_Pause
       guid: fb88e3e33235c342842f11a69a4371e4
@@ -204,6 +176,101 @@ MonoBehaviour:
         ObjectType: 7
         guid: fb88e3e33235c342842f11a69a4371e4
       Path: SoundBanks\Pause\SB_Pause
+  - PhysicalPath: SoundBanks\Room1.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Room1
+      ObjectType: 12
+      guid: 35c2180076f4984fac8d74414c36a9bd
+    ParentPath: SoundBanks\Room1
+    guid: 35c2180076f4984fac8d74414c36a9bd
+    GuidInternal: 
+    m_lastTime: -8585535302397886643
+    List:
+    - name: Room1_Music
+      guid: 39557fe40ee86748b7b12baea73b20b4
+      id: 4224448829
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Room1
+        ObjectType: 12
+        guid: 35c2180076f4984fac8d74414c36a9bd
+      - ElementName: Room1_Music
+        ObjectType: 7
+        guid: 39557fe40ee86748b7b12baea73b20b4
+      Path: SoundBanks\Room1\Room1_Music
+  - PhysicalPath: SoundBanks\Timer.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Timer
+      ObjectType: 12
+      guid: 4921cf35f663514dbc08a2a46973691f
+    ParentPath: SoundBanks\Timer
+    guid: 4921cf35f663514dbc08a2a46973691f
+    GuidInternal: 
+    m_lastTime: -8585519797981131111
+    List:
+    - name: SB_Timer
+      guid: 3dbd74880a876947a7b90eebcf3e0efd
+      id: 2045194452
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Timer
+        ObjectType: 12
+        guid: 4921cf35f663514dbc08a2a46973691f
+      - ElementName: SB_Timer
+        ObjectType: 7
+        guid: 3dbd74880a876947a7b90eebcf3e0efd
+      Path: SoundBanks\Timer\SB_Timer
+  - PhysicalPath: SoundBanks\TitleScreen.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: TitleScreen
+      ObjectType: 12
+      guid: 4d51a42b56fd1a4fb9a60a13f80ff1aa
+    ParentPath: SoundBanks\TitleScreen
+    guid: 4d51a42b56fd1a4fb9a60a13f80ff1aa
+    GuidInternal: 
+    m_lastTime: -8585537326420168272
+    List:
+    - name: TitleScreenButtons
+      guid: 3ca4017a96c4154480eaab02a192408f
+      id: 1964952752
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: TitleScreen
+        ObjectType: 12
+        guid: 4d51a42b56fd1a4fb9a60a13f80ff1aa
+      - ElementName: TitleScreenButtons
+        ObjectType: 7
+        guid: 3ca4017a96c4154480eaab02a192408f
+      Path: SoundBanks\TitleScreen\TitleScreenButtons
+    - name: TitleScreenMusic
+      guid: c0dc003ec7ca8244a93275ac789e3cfb
+      id: 1042789154
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: TitleScreen
+        ObjectType: 12
+        guid: 4d51a42b56fd1a4fb9a60a13f80ff1aa
+      - ElementName: TitleScreenMusic
+        ObjectType: 7
+        guid: c0dc003ec7ca8244a93275ac789e3cfb
+      Path: SoundBanks\TitleScreen\TitleScreenMusic
   - PhysicalPath: SoundBanks\Weapons.wwu
     PathAndIcons:
     - ElementName: SoundBanks
@@ -215,7 +282,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Weapons
     guid: 1f41bcb2b174354dab6723daa2174dc9
     GuidInternal: 
-    m_lastTime: -8585548466759411615
+    m_lastTime: -8585519797981330853
     List:
     - name: Weapons
       guid: ea54c59ebe700f4d92ba28c9cbac1d50
@@ -243,7 +310,7 @@ MonoBehaviour:
     ParentPath: Events\Character
     guid: 07a4b93e189ebd47b3d801fd141853aa
     GuidInternal: 
-    m_lastTime: -8585566662461179374
+    m_lastTime: -8585520136854775808
     List:
     - name: Play_Footsteps
       guid: 56da7a50dd4a1c46b5c666f8b793d17e
@@ -260,8 +327,8 @@ MonoBehaviour:
         guid: 56da7a50dd4a1c46b5c666f8b793d17e
       Path: Events\Character\Play_Footsteps
       maxAttenuation: 0
-      maxDuration: 0.542923
-      minDuration: 0.371031
+      maxDuration: 0.575207
+      minDuration: 0.393094
   - PhysicalPath: Events\Colours.wwu
     PathAndIcons:
     - ElementName: Events
@@ -273,7 +340,7 @@ MonoBehaviour:
     ParentPath: Events\Colours
     guid: 77683ec1fd9ad144b94ed78b62b86525
     GuidInternal: 
-    m_lastTime: -8585561370307330983
+    m_lastTime: -8585520136854775808
     List:
     - name: Play_Colour_Notification_Sound
       guid: 5f4e0a83fe98e24c85e1b49a4f6ab883
@@ -290,8 +357,8 @@ MonoBehaviour:
         guid: 5f4e0a83fe98e24c85e1b49a4f6ab883
       Path: Events\Colours\Play_Colour_Notification_Sound
       maxAttenuation: 0
-      maxDuration: 2.259625
-      minDuration: 2.259625
+      maxDuration: 0.545494
+      minDuration: 0.545494
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -303,93 +370,8 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6f41478e812ae741a8698468adaf8e94
     GuidInternal: 
-    m_lastTime: -8585548466759351771
-    List:
-    - name: Play_Character_Death
-      guid: e20321031b7fd34c8589c002922ae835
-      id: 1087513048
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 6f41478e812ae741a8698468adaf8e94
-      - ElementName: Play_Character_Death
-        ObjectType: 3
-        guid: e20321031b7fd34c8589c002922ae835
-      Path: Events\Default Work Unit\Play_Character_Death
-      maxAttenuation: 0
-      maxDuration: 0.789309
-      minDuration: 0.435952
-    - name: Play_Impact_2
-      guid: ce2e1be972834146870b5288f2396045
-      id: 4010092267
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 6f41478e812ae741a8698468adaf8e94
-      - ElementName: Play_Impact_2
-        ObjectType: 3
-        guid: ce2e1be972834146870b5288f2396045
-      Path: Events\Default Work Unit\Play_Impact_2
-      maxAttenuation: 0
-      maxDuration: 0.264417
-      minDuration: 0.264417
-    - name: Play_Level_1
-      guid: aaba59b331538449a5bd0203e1e6987e
-      id: 833230064
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 6f41478e812ae741a8698468adaf8e94
-      - ElementName: Play_Level_1
-        ObjectType: 3
-        guid: aaba59b331538449a5bd0203e1e6987e
-      Path: Events\Default Work Unit\Play_Level_1
-      maxAttenuation: 0
-      maxDuration: 13.061225
-      minDuration: 13.061225
-    - name: Play_UI_Response
-      guid: ce82ba526c5ab646a4fa3e400b43807b
-      id: 377695186
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 6f41478e812ae741a8698468adaf8e94
-      - ElementName: Play_UI_Response
-        ObjectType: 3
-        guid: ce82ba526c5ab646a4fa3e400b43807b
-      Path: Events\Default Work Unit\Play_UI_Response
-      maxAttenuation: 0
-      maxDuration: 0.466354
-      minDuration: 0.466354
-    - name: Play_Weapon_3
-      guid: 910aaa0db777504297c65f4aa440246c
-      id: 3292839560
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 6f41478e812ae741a8698468adaf8e94
-      - ElementName: Play_Weapon_3
-        ObjectType: 3
-        guid: 910aaa0db777504297c65f4aa440246c
-      Path: Events\Default Work Unit\Play_Weapon_3
-      maxAttenuation: 0
-      maxDuration: 0.531693
-      minDuration: 0.421031
+    m_lastTime: -8585519796849212139
+    List: []
   - PhysicalPath: Events\Pause.wwu
     PathAndIcons:
     - ElementName: Events
@@ -401,7 +383,7 @@ MonoBehaviour:
     ParentPath: Events\Pause
     guid: 7516b984b1bb554f98621d0b498f2421
     GuidInternal: 
-    m_lastTime: -8585561340858909338
+    m_lastTime: -8585520136854775808
     List:
     - name: Play_Pause_Music
       guid: d1d351314067874cadf14223bad29fa4
@@ -418,8 +400,8 @@ MonoBehaviour:
         guid: d1d351314067874cadf14223bad29fa4
       Path: Events\Pause\Play_Pause_Music
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_Pause_Music
       guid: a368abd101850946a7388b2d38556b13
       id: 2718830246
@@ -437,6 +419,585 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+  - PhysicalPath: Events\Room1.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Room1
+      ObjectType: 12
+      guid: f389e9b001ef894a9fcc6e5174d30567
+    ParentPath: Events\Room1
+    guid: f389e9b001ef894a9fcc6e5174d30567
+    GuidInternal: 
+    m_lastTime: -8585519797981280986
+    List:
+    - name: Enable_State_Room1_MusicSystem
+      guid: 057172d45970a74e8694a850b3a371ad
+      id: 3423239718
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Room1
+        ObjectType: 12
+        guid: f389e9b001ef894a9fcc6e5174d30567
+      - ElementName: Enable_State_Room1_MusicSystem
+        ObjectType: 3
+        guid: 057172d45970a74e8694a850b3a371ad
+      Path: Events\Room1\Enable_State_Room1_MusicSystem
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Room1_MusicSystem
+      guid: 41a0716c78b5b54db33e8c1aa67006a9
+      id: 1848114547
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Room1
+        ObjectType: 12
+        guid: f389e9b001ef894a9fcc6e5174d30567
+      - ElementName: Play_Room1_MusicSystem
+        ObjectType: 3
+        guid: 41a0716c78b5b54db33e8c1aa67006a9
+      Path: Events\Room1\Play_Room1_MusicSystem
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Room1_MusicSystem
+      guid: 14f5d160cc83f84da055bf66691de2a0
+      id: 427627125
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Room1
+        ObjectType: 12
+        guid: f389e9b001ef894a9fcc6e5174d30567
+      - ElementName: Stop_Room1_MusicSystem
+        ObjectType: 3
+        guid: 14f5d160cc83f84da055bf66691de2a0
+      Path: Events\Room1\Stop_Room1_MusicSystem
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Zone_Off
+      guid: 4714aec15d3ee447b30eb3123534310d
+      id: 1698455920
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Room1
+        ObjectType: 12
+        guid: f389e9b001ef894a9fcc6e5174d30567
+      - ElementName: Stop_Zone_Off
+        ObjectType: 3
+        guid: 4714aec15d3ee447b30eb3123534310d
+      Path: Events\Room1\Stop_Zone_Off
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Timer.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Timer
+      ObjectType: 12
+      guid: 02e44e719075154993e54f3f90b50cd4
+    ParentPath: Events\Timer
+    guid: 02e44e719075154993e54f3f90b50cd4
+    GuidInternal: 
+    m_lastTime: -8585519797981191219
+    List:
+    - name: Play_1
+      guid: d299d38998fb604bbcd57549c2f243dd
+      id: 1774091847
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Timer
+        ObjectType: 12
+        guid: 02e44e719075154993e54f3f90b50cd4
+      - ElementName: Play_1
+        ObjectType: 3
+        guid: d299d38998fb604bbcd57549c2f243dd
+      Path: Events\Timer\Play_1
+      maxAttenuation: 0
+      maxDuration: 1.846146
+      minDuration: 1.846146
+    - name: Play_1_minute_remaining
+      guid: 141375d3a764ec4bb281592a6cf62a45
+      id: 3104543763
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Timer
+        ObjectType: 12
+        guid: 02e44e719075154993e54f3f90b50cd4
+      - ElementName: Play_1_minute_remaining
+        ObjectType: 3
+        guid: 141375d3a764ec4bb281592a6cf62a45
+      Path: Events\Timer\Play_1_minute_remaining
+      maxAttenuation: 0
+      maxDuration: 1.846146
+      minDuration: 1.846146
+    - name: Play_10
+      guid: 184f770346ce0241b1109a73b418ea07
+      id: 3185625589
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Timer
+        ObjectType: 12
+        guid: 02e44e719075154993e54f3f90b50cd4
+      - ElementName: Play_10
+        ObjectType: 3
+        guid: 184f770346ce0241b1109a73b418ea07
+      Path: Events\Timer\Play_10
+      maxAttenuation: 0
+      maxDuration: 1.846146
+      minDuration: 1.846146
+    - name: Play_2
+      guid: 8995a19d2d7f644f871b86dfc67cff5b
+      id: 1774091844
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Timer
+        ObjectType: 12
+        guid: 02e44e719075154993e54f3f90b50cd4
+      - ElementName: Play_2
+        ObjectType: 3
+        guid: 8995a19d2d7f644f871b86dfc67cff5b
+      Path: Events\Timer\Play_2
+      maxAttenuation: 0
+      maxDuration: 1.846146
+      minDuration: 1.846146
+    - name: Play_3
+      guid: d3cbc12e506d20469c8625bbd778f6f3
+      id: 1774091845
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Timer
+        ObjectType: 12
+        guid: 02e44e719075154993e54f3f90b50cd4
+      - ElementName: Play_3
+        ObjectType: 3
+        guid: d3cbc12e506d20469c8625bbd778f6f3
+      Path: Events\Timer\Play_3
+      maxAttenuation: 0
+      maxDuration: 1.846146
+      minDuration: 1.846146
+    - name: Play_30_seconds_remaining
+      guid: 8e6fbe1d2d843a49a6f5f2db3f3cea7f
+      id: 2310207584
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Timer
+        ObjectType: 12
+        guid: 02e44e719075154993e54f3f90b50cd4
+      - ElementName: Play_30_seconds_remaining
+        ObjectType: 3
+        guid: 8e6fbe1d2d843a49a6f5f2db3f3cea7f
+      Path: Events\Timer\Play_30_seconds_remaining
+      maxAttenuation: 0
+      maxDuration: 1.846146
+      minDuration: 1.846146
+    - name: Play_4
+      guid: f74e361844a6ed41b2f8a5e17725126e
+      id: 1774091842
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Timer
+        ObjectType: 12
+        guid: 02e44e719075154993e54f3f90b50cd4
+      - ElementName: Play_4
+        ObjectType: 3
+        guid: f74e361844a6ed41b2f8a5e17725126e
+      Path: Events\Timer\Play_4
+      maxAttenuation: 0
+      maxDuration: 1.846146
+      minDuration: 1.846146
+    - name: Play_5
+      guid: 542f2e9db6eeae4a9e15d6f64b13a89d
+      id: 1774091843
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Timer
+        ObjectType: 12
+        guid: 02e44e719075154993e54f3f90b50cd4
+      - ElementName: Play_5
+        ObjectType: 3
+        guid: 542f2e9db6eeae4a9e15d6f64b13a89d
+      Path: Events\Timer\Play_5
+      maxAttenuation: 0
+      maxDuration: 1.846146
+      minDuration: 1.846146
+    - name: Play_6
+      guid: 57f097bdd898ae42805bc093b6e2841c
+      id: 1774091840
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Timer
+        ObjectType: 12
+        guid: 02e44e719075154993e54f3f90b50cd4
+      - ElementName: Play_6
+        ObjectType: 3
+        guid: 57f097bdd898ae42805bc093b6e2841c
+      Path: Events\Timer\Play_6
+      maxAttenuation: 0
+      maxDuration: 1.846146
+      minDuration: 1.846146
+    - name: Play_7
+      guid: 83edda222cadb644b5f87fc6db07bfa5
+      id: 1774091841
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Timer
+        ObjectType: 12
+        guid: 02e44e719075154993e54f3f90b50cd4
+      - ElementName: Play_7
+        ObjectType: 3
+        guid: 83edda222cadb644b5f87fc6db07bfa5
+      Path: Events\Timer\Play_7
+      maxAttenuation: 0
+      maxDuration: 1.846146
+      minDuration: 1.846146
+    - name: Play_8
+      guid: 7e9ece2db02b0b44a651456f51053895
+      id: 1774091854
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Timer
+        ObjectType: 12
+        guid: 02e44e719075154993e54f3f90b50cd4
+      - ElementName: Play_8
+        ObjectType: 3
+        guid: 7e9ece2db02b0b44a651456f51053895
+      Path: Events\Timer\Play_8
+      maxAttenuation: 0
+      maxDuration: 1.846146
+      minDuration: 1.846146
+    - name: Play_9
+      guid: 1def1996a08b9848b549ef0392b3cc0d
+      id: 1774091855
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Timer
+        ObjectType: 12
+        guid: 02e44e719075154993e54f3f90b50cd4
+      - ElementName: Play_9
+        ObjectType: 3
+        guid: 1def1996a08b9848b549ef0392b3cc0d
+      Path: Events\Timer\Play_9
+      maxAttenuation: 0
+      maxDuration: 1.846146
+      minDuration: 1.846146
+    - name: Play_Clock_ticking
+      guid: 263ac4313a24b24aa0dfe6aa8b2cc296
+      id: 3459533388
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Timer
+        ObjectType: 12
+        guid: 02e44e719075154993e54f3f90b50cd4
+      - ElementName: Play_Clock_ticking
+        ObjectType: 3
+        guid: 263ac4313a24b24aa0dfe6aa8b2cc296
+      Path: Events\Timer\Play_Clock_ticking
+      maxAttenuation: 0
+      maxDuration: 10
+      minDuration: 10
+    - name: Stop_10
+      guid: e21c2f2b6b409d478381f7f0664e2040
+      id: 1769289067
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Timer
+        ObjectType: 12
+        guid: 02e44e719075154993e54f3f90b50cd4
+      - ElementName: Stop_10
+        ObjectType: 3
+        guid: e21c2f2b6b409d478381f7f0664e2040
+      Path: Events\Timer\Stop_10
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Clock_ticking
+      guid: 35b93ac8d3373d428a876d9d1501d57f
+      id: 154992018
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Timer
+        ObjectType: 12
+        guid: 02e44e719075154993e54f3f90b50cd4
+      - ElementName: Stop_Clock_ticking
+        ObjectType: 3
+        guid: 35b93ac8d3373d428a876d9d1501d57f
+      Path: Events\Timer\Stop_Clock_ticking
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  - PhysicalPath: Events\TitleScreen.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: TitleScreen
+      ObjectType: 12
+      guid: 901ab13fa9707f4c883a51de34c99acd
+    ParentPath: Events\TitleScreen
+    guid: 901ab13fa9707f4c883a51de34c99acd
+    GuidInternal: 
+    m_lastTime: -8585535302397786911
+    List:
+    - name: Play_TitleScreenButton
+      guid: b7937cc5df0c79489c1b605707d38576
+      id: 1083819328
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: TitleScreen
+        ObjectType: 12
+        guid: 901ab13fa9707f4c883a51de34c99acd
+      - ElementName: Play_TitleScreenButton
+        ObjectType: 3
+        guid: b7937cc5df0c79489c1b605707d38576
+      Path: Events\TitleScreen\Play_TitleScreenButton
+      maxAttenuation: 0
+      maxDuration: 0.466354
+      minDuration: 0.466354
+    - name: Play_TitleScreenMusic
+      guid: 5def23af3aabb24680250896d9bd0fc5
+      id: 4182175493
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: TitleScreen
+        ObjectType: 12
+        guid: 901ab13fa9707f4c883a51de34c99acd
+      - ElementName: Play_TitleScreenMusic
+        ObjectType: 3
+        guid: 5def23af3aabb24680250896d9bd0fc5
+      Path: Events\TitleScreen\Play_TitleScreenMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_TitleScreenMusic
+      guid: 91069ea0311742459f2e8efa950aa351
+      id: 1792618987
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: TitleScreen
+        ObjectType: 12
+        guid: 901ab13fa9707f4c883a51de34c99acd
+      - ElementName: Stop_TitleScreenMusic
+        ObjectType: 3
+        guid: 91069ea0311742459f2e8efa950aa351
+      Path: Events\TitleScreen\Stop_TitleScreenMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  - PhysicalPath: Events\Weapons.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Weapons
+      ObjectType: 12
+      guid: a61bafee274c6c4a88f958c13cc7aa17
+    ParentPath: Events\Weapons
+    guid: a61bafee274c6c4a88f958c13cc7aa17
+    GuidInternal: 
+    m_lastTime: -8585519797981091489
+    List:
+    - name: Play_Empty_Magazine
+      guid: 78d5528ceb72dd4c99de38e34e62a13a
+      id: 4048309006
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: a61bafee274c6c4a88f958c13cc7aa17
+      - ElementName: Play_Empty_Magazine
+        ObjectType: 3
+        guid: 78d5528ceb72dd4c99de38e34e62a13a
+      Path: Events\Weapons\Play_Empty_Magazine
+      maxAttenuation: 0
+      maxDuration: 0.82701
+      minDuration: 0.82701
+    - name: Play_Gun1_Pistol
+      guid: 84e562490f1ac543bced010e48fc69a0
+      id: 2511965933
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: a61bafee274c6c4a88f958c13cc7aa17
+      - ElementName: Play_Gun1_Pistol
+        ObjectType: 3
+        guid: 84e562490f1ac543bced010e48fc69a0
+      Path: Events\Weapons\Play_Gun1_Pistol
+      maxAttenuation: 0
+      maxDuration: 0.356289
+      minDuration: 0.336292
+    - name: Play_Gun1_Reload
+      guid: 770c741d674ea040be18d9232e7dee7f
+      id: 3722587671
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: a61bafee274c6c4a88f958c13cc7aa17
+      - ElementName: Play_Gun1_Reload
+        ObjectType: 3
+        guid: 770c741d674ea040be18d9232e7dee7f
+      Path: Events\Weapons\Play_Gun1_Reload
+      maxAttenuation: 0
+      maxDuration: 2.568651
+      minDuration: 2.034034
+    - name: Play_Gun2_Reload
+      guid: ac8517daee2052459aecde214dfab006
+      id: 3492408042
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: a61bafee274c6c4a88f958c13cc7aa17
+      - ElementName: Play_Gun2_Reload
+        ObjectType: 3
+        guid: ac8517daee2052459aecde214dfab006
+      Path: Events\Weapons\Play_Gun2_Reload
+      maxAttenuation: 0
+      maxDuration: 1.166977
+      minDuration: 0.965564
+    - name: Play_Gun2_Sniper
+      guid: 414487acca57584da497bb3c9c9ffcfb
+      id: 713151188
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: a61bafee274c6c4a88f958c13cc7aa17
+      - ElementName: Play_Gun2_Sniper
+        ObjectType: 3
+        guid: 414487acca57584da497bb3c9c9ffcfb
+      Path: Events\Weapons\Play_Gun2_Sniper
+      maxAttenuation: 0
+      maxDuration: 0.620471
+      minDuration: 0.576917
+    - name: Play_Gun3_Reload
+      guid: 25b2e708221ae74aacc1833e75e2ab36
+      id: 1066851873
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: a61bafee274c6c4a88f958c13cc7aa17
+      - ElementName: Play_Gun3_Reload
+        ObjectType: 3
+        guid: 25b2e708221ae74aacc1833e75e2ab36
+      Path: Events\Weapons\Play_Gun3_Reload
+      maxAttenuation: 0
+      maxDuration: 2.567168
+      minDuration: 2.251694
+    - name: Play_Gun3_Shotgun
+      guid: cf0f2bd420c5be4f945f28860c8d79e8
+      id: 4234227180
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: a61bafee274c6c4a88f958c13cc7aa17
+      - ElementName: Play_Gun3_Shotgun
+        ObjectType: 3
+        guid: cf0f2bd420c5be4f945f28860c8d79e8
+      Path: Events\Weapons\Play_Gun3_Shotgun
+      maxAttenuation: 0
+      maxDuration: 0.535182
+      minDuration: 0.535182
+    - name: Play_Gun4_AutomaticRifle
+      guid: 08d61bf727878448aff4e53df36fa0f6
+      id: 2029805462
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: a61bafee274c6c4a88f958c13cc7aa17
+      - ElementName: Play_Gun4_AutomaticRifle
+        ObjectType: 3
+        guid: 08d61bf727878448aff4e53df36fa0f6
+      Path: Events\Weapons\Play_Gun4_AutomaticRifle
+      maxAttenuation: 0
+      maxDuration: 0.575585
+      minDuration: 0.542966
+    - name: Play_Weapon_Swap
+      guid: 0902d21e64a94a4d8d97ff7eb086b256
+      id: 4057172324
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: a61bafee274c6c4a88f958c13cc7aa17
+      - ElementName: Play_Weapon_Swap
+        ObjectType: 3
+        guid: 0902d21e64a94a4d8d97ff7eb086b256
+      Path: Events\Weapons\Play_Weapon_Swap
+      maxAttenuation: 0
+      maxDuration: 0.540241
+      minDuration: 0.409426
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -449,22 +1010,8 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 57780971a3ef4645bfbe38a0213a53c6
     GuidInternal: 
-    m_lastTime: -8585558020099792026
-    List:
-    - name: Distance_Music
-      guid: 8b1b6ff042fe1e41b63174c2ba7bd57a
-      id: 3686004508
-      PathAndIcons:
-      - ElementName: Game Parameters
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 57780971a3ef4645bfbe38a0213a53c6
-      - ElementName: Distance_Music
-        ObjectType: 13
-        guid: 8b1b6ff042fe1e41b63174c2ba7bd57a
-      Path: Game Parameters\Default Work Unit\Distance_Music
+    m_lastTime: -8585520136854775808
+    List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -477,55 +1024,116 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 0935ef1c1bc0c549a8b7d472f80e6181
     GuidInternal: 
-    m_lastTime: -8585558020099762105
+    m_lastTime: -8585520136254775808
+    List: []
+  - PhysicalPath: States\Room1_Music.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Room1_Music
+      ObjectType: 12
+      guid: 5b9637b774b6ad4fa0d9e3c758297d92
+    ParentPath: States\Room1_Music
+    guid: 5b9637b774b6ad4fa0d9e3c758297d92
+    GuidInternal: 
+    m_lastTime: -8585537872812370022
     List:
-    - name: Music
-      guid: 5a94bdce5a91cc4ab66f62059c70a5ad
-      id: 3991942870
+    - name: Room1_Music
+      guid: 2b457512d047914a877a013631188650
+      id: 4224448829
       PathAndIcons:
       - ElementName: States
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
+      - ElementName: Room1_Music
         ObjectType: 12
-        guid: 0935ef1c1bc0c549a8b7d472f80e6181
-      - ElementName: Music
+        guid: 5b9637b774b6ad4fa0d9e3c758297d92
+      - ElementName: Room1_Music
         ObjectType: 9
-        guid: 5a94bdce5a91cc4ab66f62059c70a5ad
-      Path: States\Default Work Unit\Music
+        guid: 2b457512d047914a877a013631188650
+      Path: States\Room1_Music\Room1_Music
       values:
-      - name: Level1_HorizontalMusic
-        guid: 743df117cc49344abb209e73a3704316
-        id: 582720662
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 0935ef1c1bc0c549a8b7d472f80e6181
-        - ElementName: Music
-          ObjectType: 9
-          guid: 5a94bdce5a91cc4ab66f62059c70a5ad
-        - ElementName: Level1_HorizontalMusic
-          ObjectType: 8
-          guid: 743df117cc49344abb209e73a3704316
       - name: None
-        guid: 5337c96feb19d841b393f0ae8e5aefdf
+        guid: 2b5707e9f14d244fa6e0554dafb63155
         id: 748895195
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
           guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
+        - ElementName: Room1_Music
           ObjectType: 12
-          guid: 0935ef1c1bc0c549a8b7d472f80e6181
-        - ElementName: Music
+          guid: 5b9637b774b6ad4fa0d9e3c758297d92
+        - ElementName: Room1_Music
           ObjectType: 9
-          guid: 5a94bdce5a91cc4ab66f62059c70a5ad
+          guid: 2b457512d047914a877a013631188650
         - ElementName: None
           ObjectType: 8
-          guid: 5337c96feb19d841b393f0ae8e5aefdf
+          guid: 2b5707e9f14d244fa6e0554dafb63155
+      - name: R1_Zone1_On
+        guid: eedbcc6923b1ab4fbc0c3f5dee8cccd0
+        id: 3599229692
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Room1_Music
+          ObjectType: 12
+          guid: 5b9637b774b6ad4fa0d9e3c758297d92
+        - ElementName: Room1_Music
+          ObjectType: 9
+          guid: 2b457512d047914a877a013631188650
+        - ElementName: R1_Zone1_On
+          ObjectType: 8
+          guid: eedbcc6923b1ab4fbc0c3f5dee8cccd0
+      - name: R1_Zone2_On
+        guid: 62a2c8e4e6636b4d9d42d5a09c420e56
+        id: 471900189
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Room1_Music
+          ObjectType: 12
+          guid: 5b9637b774b6ad4fa0d9e3c758297d92
+        - ElementName: Room1_Music
+          ObjectType: 9
+          guid: 2b457512d047914a877a013631188650
+        - ElementName: R1_Zone2_On
+          ObjectType: 8
+          guid: 62a2c8e4e6636b4d9d42d5a09c420e56
+      - name: R1_Zone3_On
+        guid: 6e2e28e25c385545a9dc8fa0cb885bdc
+        id: 3472437158
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Room1_Music
+          ObjectType: 12
+          guid: 5b9637b774b6ad4fa0d9e3c758297d92
+        - ElementName: Room1_Music
+          ObjectType: 9
+          guid: 2b457512d047914a877a013631188650
+        - ElementName: R1_Zone3_On
+          ObjectType: 8
+          guid: 6e2e28e25c385545a9dc8fa0cb885bdc
+      - name: Zone_Off
+        guid: 7ce7f92a6e02af45b74e0903646bef90
+        id: 148101121
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Room1_Music
+          ObjectType: 12
+          guid: 5b9637b774b6ad4fa0d9e3c758297d92
+        - ElementName: Room1_Music
+          ObjectType: 9
+          guid: 2b457512d047914a877a013631188650
+        - ElementName: Zone_Off
+          ObjectType: 8
+          guid: 7ce7f92a6e02af45b74e0903646bef90
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -541,7 +1149,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: c738e96daadbbb438a45b7d9e89f4e6b
     GuidInternal: 
-    m_lastTime: -8585566662460710391
+    m_lastTime: -8585520136254775808
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -555,10 +1163,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: ead9fe01ef4f13439e4dcc9e3f9d7406
     GuidInternal: 
-    m_lastTime: -8585566662460700386
+    m_lastTime: -8585520136254775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0600000007000000170000001a00000023000000
+  ExpandedWaapiItemIds: 05000000060000001800000020000000260000002c0000002d0000002f00000033000000340000003500000036000000370000003a0000004200000049000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

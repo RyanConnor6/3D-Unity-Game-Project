@@ -137,6 +137,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            AkSoundEngine.PostEvent("Your_Event_Name", gameObject);
         }
 
         //If player presses left shift, toggle sprint status
