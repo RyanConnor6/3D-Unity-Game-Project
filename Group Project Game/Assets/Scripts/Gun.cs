@@ -224,6 +224,14 @@ public class Gun : MonoBehaviour
                 target.TakeDamage(damage);
             }
 
+            Room10ReWarp room19rw = hit.transform.GetComponent<Room10ReWarp>();
+
+            //If its a target send damage to it
+            if (room19rw != null)
+            {
+                room19rw.TakeDamage(damage);
+            }
+
             //Impact FX using pooling
             GameObject bullet = ParticlePool.SharedInstance.GetPooledObject(); 
             if (bullet != null) 
@@ -276,6 +284,14 @@ public class Gun : MonoBehaviour
                 if (target != null)
                 {
                     target.TakeDamage(damage);
+                }
+
+                Room10ReWarp room19rw = hit.transform.GetComponent<Room10ReWarp>();
+
+                //If its a target send damage to it
+                if (room19rw != null)
+                {
+                    room19rw.TakeDamage(damage);
                 }
 
                 //Impact FX using pooling

@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 1646223071152274296}
   - component: {fileID: 1646223071152274300}
   - component: {fileID: 1646223071152274301}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a4bc8c7ea5414e542a439ddc2c7f349d, type: 2}
+  - {fileID: 2100000, guid: a1d01ec6c1270c045a4533d62151239b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -92,7 +92,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646223071152274183}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
