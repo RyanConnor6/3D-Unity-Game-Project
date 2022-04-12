@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     private bool footstepIsPlaying = false;
     private float lastFootstepTime = 0;
 
+
     private void Awake()
     {
         lastFootstepTime = Time.time;
@@ -139,8 +140,14 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
-        //If player presses left shift, toggle sprint status
-        if (Input.GetButtonDown("left shift"))
+        if (Input.GetKey(KeyCode.Space) && isGrounded)
+        {
+            AkSoundEngine.PostEvent("Play_Jump", gameObject);
+        }
+
+
+            //If player presses left shift, toggle sprint status
+            if (Input.GetButtonDown("left shift"))
         {
             speed = 10;
         }

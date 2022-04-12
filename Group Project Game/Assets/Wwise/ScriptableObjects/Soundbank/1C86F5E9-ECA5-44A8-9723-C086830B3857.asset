@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cb3f68a4e5c95a4daef297792f89242, type: 3}
+  m_Name: 1C86F5E9-ECA5-44A8-9723-C086830B3857
+  m_EditorClassIdentifier: 
+  objectName: Room_Ambience
+  id: 1936541503
+  guid: 1C86F5E9-ECA5-44A8-9723-C086830B3857

@@ -9,16 +9,17 @@ public class Gun : MonoBehaviour
     public float damage = 10f;
     public float range = 100f;
     public float fireRate = 1f;
-    private float bullets = 1f;
+    public float bullets = 6f;
 
     //FX and other variables
     public Camera fpscamera;
     public ParticleSystem muzzleflash;
     public GameObject impactEffect;
     public Transform BulletSpawnPoint;
-    public GameObject defaultGun;
     public GameObject shotgun;
     public GameObject pistol;
+    public GameObject sniper;
+    public GameObject vector;
 
     //Bullet trail
     [SerializeField]
@@ -40,9 +41,10 @@ public class Gun : MonoBehaviour
 
     void Start()
     {
-        pistol.SetActive(true);
-        defaultGun.SetActive(false);
+        sniper.SetActive(false);
+        vector.SetActive(false);
         shotgun.SetActive(false);
+        pistol.SetActive(true);
         m_Animator = gameObject.GetComponent<Animator>();
         // The GameObject cannot jump
         shootAnim = false;
@@ -56,17 +58,19 @@ public class Gun : MonoBehaviour
         //Pistol (Medium damage, Medium fire rate)
         if (Input.GetKeyDown("1"))
         {
-            bullets = 1f;
+            bullets = 6f;
             gunChosen = 0;
             //Weapon swap time
             nextTimeToFire = Time.time + 1f;
             //Gun stats
-            damage = 10f;
+            damage = 4f;
             range = 100f;
             fireRate = 0.7f;
-            defaultGun.SetActive(false);
+            sniper.SetActive(false);
+            vector.SetActive(false);
             shotgun.SetActive(false);
             pistol.SetActive(true);
+            AkSoundEngine.PostEvent("Play_Weapon_Swap", gameObject);
         }
         //Sniper (High Damage, Low fire rate)
         if (Input.GetKeyDown("2"))
@@ -78,26 +82,30 @@ public class Gun : MonoBehaviour
             //Gun stats
             damage = 30f;
             range = 100f;
-            fireRate = 0.3f;
-            defaultGun.SetActive(true);
+            fireRate = 0.4f;
+            sniper.SetActive(true);
+            vector.SetActive(false);
             shotgun.SetActive(false);
             pistol.SetActive(false);
+            AkSoundEngine.PostEvent("Play_Weapon_Swap", gameObject);
         }
         //Shotgun (Large Damage, Medium fire rate, Scattered shots)
         if (Input.GetKeyDown("3"))
         {
-            bullets = 1f;
+            bullets = 3f;
             gunChosen = 1;
             //Weapon swap time
             nextTimeToFire = Time.time + 1f;
             //Gun stats
-            damage = 3f;
+            damage = 2.5f;
             range = 100f;
-            fireRate = 1f;
+            fireRate = 1.7f;
             BulletSpreadVariance = new Vector3(0.1f, 0.1f, 0.1f);
-            defaultGun.SetActive(false);
-            pistol.SetActive(false);
+            sniper.SetActive(false);
+            vector.SetActive(false);
             shotgun.SetActive(true);
+            pistol.SetActive(false);
+            AkSoundEngine.PostEvent("Play_Weapon_Swap", gameObject);
         }
         //Fast Fire Rate Weapon (Low damage, High fire rate)
         if (Input.GetKeyDown("4"))
@@ -107,47 +115,93 @@ public class Gun : MonoBehaviour
             //Weapon swap time
             nextTimeToFire = Time.time + 1f;
             //Gun stats
-            damage = 0.5f;
+            damage = 7f;
             range = 100f;
-            fireRate = 25f;
-            defaultGun.SetActive(true);
+            fireRate = 15f;
+            sniper.SetActive(false);
+            vector.SetActive(true);
             shotgun.SetActive(false);
             pistol.SetActive(false);
+            AkSoundEngine.PostEvent("Play_Weapon_Swap", gameObject);
+
         }    
 
         //Ran out of ammo, add delay to next fire time
-        if (bullets == 0)
+        if (bullets == 0 && gunChosen == 0)
+        {
+            nextTimeToFire = Time.time + 2f;
+            bullets = 6f;
+            AkSoundEngine.PostEvent("Play_Empty_Magazine", gameObject);
+            AkSoundEngine.PostEvent("Play_Gun1_Reload", gameObject);
+        }
+        if (bullets == 0 && gunChosen == 1)
+        {
+            nextTimeToFire = Time.time + 2f;
+            bullets = 3f;
+            AkSoundEngine.PostEvent("Play_Empty_Magazine", gameObject);
+            AkSoundEngine.PostEvent("Play_Gun3_Reload", gameObject);
+        }
+        if (bullets == 0 && gunChosen == 2)
         {
             nextTimeToFire = Time.time + 1f;
             bullets = 20f;
+            AkSoundEngine.PostEvent("Play_Empty_Magazine", gameObject);
+            AkSoundEngine.PostEvent("Play_Gun2_Reload", gameObject);
         }
+
+
+
+        if (Input.GetKeyDown(KeyCode.R) && gunChosen == 0)
+        {
+            nextTimeToFire = Time.time + 2f;
+            bullets = 6f;
+            AkSoundEngine.PostEvent("Play_Gun1_Reload", gameObject);
+        }
+        if (Input.GetKeyDown(KeyCode.R) && gunChosen == 1)
+        {
+            nextTimeToFire = Time.time + 2f;
+            bullets = 3f;
+            AkSoundEngine.PostEvent("Play_Gun3_Reload", gameObject);
+        }
+        if (Input.GetKeyDown(KeyCode.R) && gunChosen == 2)
+        {
+            nextTimeToFire = Time.time + 1f;
+            bullets = 20f;
+            AkSoundEngine.PostEvent("Play_Gun2_Reload", gameObject);
+        }
+
+
 
         shootAnim = false;
 
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
         //Pistol shoot mode
-        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire && gunChosen == 0)
+        if (Input.GetButtonDown("Fire1") && Time.time >= nextTimeToFire && gunChosen == 0)
         {
-            nextTimeToFire = Time.time + 1f / fireRate;
-            PistolShoot();
+            nextTimeToFire = 0f;
+            bullets--;
+            NormalShoot();
             shootAnim = true;
-            AkSoundEngine.PostEvent("Play_Weapon_3", gameObject);
+            AkSoundEngine.PostEvent("Play_Gun1_Pistol", gameObject);
         }
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
         //Sniper shoot mode
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire && gunChosen == 3)
         {
             nextTimeToFire = Time.time + 1f / fireRate;
-            PistolShoot();
+            NormalShoot();
             shootAnim = true;
+            AkSoundEngine.PostEvent("Play_Gun2_Sniper", gameObject);
         }
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
         //Shotgun shoot mode
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire && gunChosen == 1)
         {
             nextTimeToFire = Time.time + 1f / fireRate;
-            ShotgunShoot();
+            bullets--;
+            ScatterShot();
             shootAnim = true;
+            AkSoundEngine.PostEvent("Play_Gun3_Shotgun", gameObject);
         }
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
         //AR shoot mode
@@ -155,8 +209,9 @@ public class Gun : MonoBehaviour
         {
             bullets--;
             nextTimeToFire = Time.time + 1f / fireRate;
-            PistolShoot();
+            NormalShoot();
             shootAnim = true;
+            AkSoundEngine.PostEvent("Play_Gun4_AutomaticRifle", gameObject);
         }
 
         if (shootAnim == false)
@@ -166,8 +221,8 @@ public class Gun : MonoBehaviour
             m_Animator.SetBool("Shoot", true);
     }
 
-    //Pistol shoot
-    void PistolShoot()
+    //normal shoot mode
+    void NormalShoot()
     {
         //Play shoot FX
         muzzleflash.Play();
@@ -188,6 +243,14 @@ public class Gun : MonoBehaviour
                 target.TakeDamage(damage);
             }
 
+            Room10ReWarp room19rw = hit.transform.GetComponent<Room10ReWarp>();
+
+            //If its a target send damage to it
+            if (room19rw != null)
+            {
+                room19rw.TakeDamage(damage);
+            }
+
             //Impact FX using pooling
             GameObject bullet = ParticlePool.SharedInstance.GetPooledObject(); 
             if (bullet != null) 
@@ -205,7 +268,8 @@ public class Gun : MonoBehaviour
 
     }
 
-    void ShotgunShoot()
+    //Shotgun scatter shot
+    void ScatterShot()
     {
         //Play shoot FX
         muzzleflash.Play();
@@ -239,6 +303,14 @@ public class Gun : MonoBehaviour
                 if (target != null)
                 {
                     target.TakeDamage(damage);
+                }
+
+                Room10ReWarp room19rw = hit.transform.GetComponent<Room10ReWarp>();
+
+                //If its a target send damage to it
+                if (room19rw != null)
+                {
+                    room19rw.TakeDamage(damage);
                 }
 
                 //Impact FX using pooling
