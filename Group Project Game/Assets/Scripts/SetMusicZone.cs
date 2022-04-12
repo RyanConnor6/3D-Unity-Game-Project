@@ -5,7 +5,7 @@ using UnityEngine;
 public class SetMusicZone : MonoBehaviour
 {
     public AK.Wwise.State OnTriggerEnterState;
-    public AK.Wwise.State OnTriggerExitState;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,12 +15,5 @@ public class SetMusicZone : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            OnTriggerExitState.SetValue();
-        }
-    }
 }
 

@@ -30,18 +30,24 @@ public class Timer : MonoBehaviour
         //Take away elapsed time in tick
         targetTime -= Time.deltaTime;
 
+        //Time remaining
+
+        if (targetTime <= 60.0f && targetTime >= 59.99f)
+        {
+            AkSoundEngine.PostEvent("Play_1_minute_remaining", gameObject);
+        }
+
+        if (targetTime <= 30.0f && targetTime >= 29.99f)
+        {
+            AkSoundEngine.PostEvent("Play_30_seconds_remaining", gameObject);
+        }
 
         //Voice countdown
         if (targetTime <= 10.0f && targetTime >= 9.99f)
         {
             AkSoundEngine.PostEvent("Play_10", gameObject);
-            AkSoundEngine.PostEvent("Play_Clock_ticking", gameObject);
         }
 
-        if (targetTime >= 10.0f)
-        {
-            AkSoundEngine.PostEvent("Stop_Clock_ticking", gameObject);
-        }
 
         if (targetTime <= 9.0f && targetTime >= 8.991f)
         {

@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bccab85ab752eef41b06f12c503cc97b, type: 3}
-  m_Name: D1AB68A3-8501-4609-A738-8B2D38556B13
+  m_Script: {fileID: 11500000, guid: 3cb3f68a4e5c95a4daef297792f89242, type: 3}
+  m_Name: 627396BD-818D-419C-B345-876725D57858
   m_EditorClassIdentifier: 
-  objectName: Stop_Pause_Music
-  id: 2718830246
-  guid: D1AB68A3-8501-4609-A738-8B2D38556B13
+  objectName: Targets
+  id: 3814383601
+  guid: 627396BD-818D-419C-B345-876725D57858

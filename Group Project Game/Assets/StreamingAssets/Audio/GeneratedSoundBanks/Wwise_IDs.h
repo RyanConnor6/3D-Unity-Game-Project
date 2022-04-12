@@ -25,6 +25,7 @@ namespace AK
         static const AkUniqueID PLAY_9 = 1774091855U;
         static const AkUniqueID PLAY_10 = 3185625589U;
         static const AkUniqueID PLAY_30_SECONDS_REMAINING = 2310207584U;
+        static const AkUniqueID PLAY_BOSS_DEATH = 3695176782U;
         static const AkUniqueID PLAY_CHARACTER_DEATH = 1087513048U;
         static const AkUniqueID PLAY_CLOCK_TICKING = 3459533388U;
         static const AkUniqueID PLAY_COLOUR_NOTIFICATION_SOUND = 341733316U;
@@ -37,9 +38,12 @@ namespace AK
         static const AkUniqueID PLAY_GUN3_RELOAD = 1066851873U;
         static const AkUniqueID PLAY_GUN3_SHOTGUN = 4234227180U;
         static const AkUniqueID PLAY_GUN4_AUTOMATICRIFLE = 2029805462U;
-        static const AkUniqueID PLAY_IMPACT_2 = 4010092267U;
+        static const AkUniqueID PLAY_JUMP = 3689126666U;
+        static const AkUniqueID PLAY_MINIONGRUNTS = 14875581U;
         static const AkUniqueID PLAY_PAUSE_MUSIC = 1496939652U;
         static const AkUniqueID PLAY_ROOM1_MUSICSYSTEM = 1848114547U;
+        static const AkUniqueID PLAY_ROOM_AMBIENCE = 3498797582U;
+        static const AkUniqueID PLAY_TARGETS = 142909268U;
         static const AkUniqueID PLAY_TITLESCREENBUTTON = 1083819328U;
         static const AkUniqueID PLAY_TITLESCREENMUSIC = 4182175493U;
         static const AkUniqueID PLAY_WEAPON_SWAP = 4057172324U;
@@ -47,6 +51,7 @@ namespace AK
         static const AkUniqueID STOP_CLOCK_TICKING = 154992018U;
         static const AkUniqueID STOP_PAUSE_MUSIC = 2718830246U;
         static const AkUniqueID STOP_ROOM1_MUSICSYSTEM = 427627125U;
+        static const AkUniqueID STOP_ROOM_AMBIENCE = 1601313172U;
         static const AkUniqueID STOP_TITLESCREENMUSIC = 1792618987U;
     } // namespace EVENTS
 
@@ -70,20 +75,24 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID DISTANCE_MUSIC = 3686004508U;
-        static const AkUniqueID TITLESCREEN_MUSIC = 4092976205U;
+        static const AkUniqueID DISTANCE_TOENEMY = 3134175368U;
+        static const AkUniqueID DISTANCE_TOTARGET = 784490751U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID BOSS = 1560169506U;
         static const AkUniqueID DEATH = 779278001U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
+        static const AkUniqueID MINIONS = 3693811082U;
         static const AkUniqueID ROOM1_MUSIC = 4224448829U;
+        static const AkUniqueID ROOM_AMBIENCE = 1936541503U;
         static const AkUniqueID SB_BULLET_IMPACTS = 716559825U;
         static const AkUniqueID SB_COLOURS = 1481651908U;
         static const AkUniqueID SB_PAUSE = 494645853U;
         static const AkUniqueID SB_TIMER = 2045194452U;
+        static const AkUniqueID TARGETS = 3814383601U;
         static const AkUniqueID TITLESCREENBUTTONS = 1964952752U;
         static const AkUniqueID TITLESCREENMUSIC = 1042789154U;
         static const AkUniqueID WEAPONS = 1467963052U;

@@ -36,8 +36,29 @@ public class Target : MonoBehaviour
         //Destroy when no health
         if (health <= 0)
         {
+
             Destroy(gameObject);
             SceneController.GetComponent<SceneController>().enemiesLeft--;
+
+            if (tag == "Enemy")
+            {
+                AkSoundEngine.PostEvent("Play_MinionGrunts", gameObject);
+            }
+
+            if (tag == "DestroyableTargets")
+            {
+                AkSoundEngine.PostEvent("Play_Targets", gameObject);
+            }
+
+            if (tag == "MiniBoss")
+            {
+                AkSoundEngine.PostEvent("Play_Boss_Death", gameObject);
+            }
+
+            if (tag == "LastBoss")
+            {
+                AkSoundEngine.PostEvent("Play_Boss_Death", gameObject);
+            }
         }
     }
 

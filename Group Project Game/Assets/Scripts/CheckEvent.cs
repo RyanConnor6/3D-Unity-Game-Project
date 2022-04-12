@@ -24,6 +24,7 @@ public class CheckEvent : MonoBehaviour
         {
             AkSoundEngine.PostEvent("Stop_Room1_MusicSystem", gameObject);
         }
+
     }
 }
 

@@ -32,6 +32,7 @@ public class Pause : MonoBehaviour
                 print("paused");
                 pauseText.SetActive(true);
                 pauseOverlay.SetActive(true);
+                AkSoundEngine.PostEvent("Stop_Room1_MusicSystem", gameObject);
                 AkSoundEngine.PostEvent("Play_Pause_Music", gameObject);
 
 
@@ -45,8 +46,11 @@ public class Pause : MonoBehaviour
                 pauseText.SetActive(false);
                 pauseOverlay.SetActive(false);
                 AkSoundEngine.PostEvent("Stop_Pause_Music", gameObject);
+                AkSoundEngine.PostEvent("Play_Room1_MusicSystem", gameObject);
 
             }
+
+            AkSoundEngine.PostEvent("Play_TitleScreenButton", gameObject);
         }
     }
 }
