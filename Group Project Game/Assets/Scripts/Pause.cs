@@ -6,6 +6,7 @@ public class Pause : MonoBehaviour
 {
     //Pause variables
     private bool paused = false;
+    private bool pauseMusic = false;
     public GameObject pauseText;
     public GameObject pauseOverlay;
 
@@ -31,6 +32,10 @@ public class Pause : MonoBehaviour
                 print("paused");
                 pauseText.SetActive(true);
                 pauseOverlay.SetActive(true);
+                AkSoundEngine.PostEvent("Stop_Room1_MusicSystem", gameObject);
+                AkSoundEngine.PostEvent("Play_Pause_Music", gameObject);
+
+
             }
             //If not running unpause game and hide UI
             else
@@ -40,7 +45,12 @@ public class Pause : MonoBehaviour
                 print("unpaused");
                 pauseText.SetActive(false);
                 pauseOverlay.SetActive(false);
+                AkSoundEngine.PostEvent("Stop_Pause_Music", gameObject);
+                AkSoundEngine.PostEvent("Play_Room1_MusicSystem", gameObject);
+
             }
+
+            AkSoundEngine.PostEvent("Play_TitleScreenButton", gameObject);
         }
     }
 }

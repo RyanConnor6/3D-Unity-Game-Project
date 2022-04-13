@@ -9,6 +9,7 @@ public class SceneExit : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        AkSoundEngine.PostEvent("Stop_Room1_MusicSystem", gameObject);
         SceneManager.LoadScene(sceneToLoad);
     }
 }
