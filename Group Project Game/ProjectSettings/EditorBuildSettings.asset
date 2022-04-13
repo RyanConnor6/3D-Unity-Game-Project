@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ControlsScreen.unity
     guid: 58a1f2ebaa14ef14fbef54145360deaa
   - enabled: 1
+    path: Assets/Scenes/Credit.unity
+    guid: 6839098159f46e3439d5ca51cbdd4bbb
+  - enabled: 1
     path: Assets/Scenes/Room1.unity
     guid: 249bcca2b8e566641860d73b8b24f2ab
   - enabled: 1
@@ -45,6 +48,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Room10.unity
     guid: 6a998e26ed2121a4b86ea979d8f66e79
   - enabled: 1
-    path: Assets/Scenes/Credit.unity
-    guid: 6839098159f46e3439d5ca51cbdd4bbb
+    path: Assets/Scenes/VictoryScreen.unity
+    guid: 4918ea30bccc17f4f9a9b52318554580
   m_configObjects: {}
