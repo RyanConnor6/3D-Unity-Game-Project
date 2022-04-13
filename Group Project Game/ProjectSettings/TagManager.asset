@@ -5,9 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - DestroyableTargets
-  - MiniBoss
-  - LastBoss
   layers:
   - Default
   - TransparentFX

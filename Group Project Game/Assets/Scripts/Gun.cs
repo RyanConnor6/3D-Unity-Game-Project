@@ -70,7 +70,6 @@ public class Gun : MonoBehaviour
             vector.SetActive(false);
             shotgun.SetActive(false);
             pistol.SetActive(true);
-            AkSoundEngine.PostEvent("Play_Weapon_Swap", gameObject);
         }
         //Sniper (High Damage, Low fire rate)
         if (Input.GetKeyDown("2"))
@@ -87,7 +86,6 @@ public class Gun : MonoBehaviour
             vector.SetActive(false);
             shotgun.SetActive(false);
             pistol.SetActive(false);
-            AkSoundEngine.PostEvent("Play_Weapon_Swap", gameObject);
         }
         //Shotgun (Large Damage, Medium fire rate, Scattered shots)
         if (Input.GetKeyDown("3"))
@@ -105,7 +103,6 @@ public class Gun : MonoBehaviour
             vector.SetActive(false);
             shotgun.SetActive(true);
             pistol.SetActive(false);
-            AkSoundEngine.PostEvent("Play_Weapon_Swap", gameObject);
         }
         //Fast Fire Rate Weapon (Low damage, High fire rate)
         if (Input.GetKeyDown("4"))
@@ -122,8 +119,6 @@ public class Gun : MonoBehaviour
             vector.SetActive(true);
             shotgun.SetActive(false);
             pistol.SetActive(false);
-            AkSoundEngine.PostEvent("Play_Weapon_Swap", gameObject);
-
         }    
 
         //Ran out of ammo, add delay to next fire time
@@ -131,45 +126,34 @@ public class Gun : MonoBehaviour
         {
             nextTimeToFire = Time.time + 2f;
             bullets = 6f;
-            AkSoundEngine.PostEvent("Play_Empty_Magazine", gameObject);
-            AkSoundEngine.PostEvent("Play_Gun1_Reload", gameObject);
         }
         if (bullets == 0 && gunChosen == 1)
         {
             nextTimeToFire = Time.time + 2f;
             bullets = 3f;
-            AkSoundEngine.PostEvent("Play_Empty_Magazine", gameObject);
-            AkSoundEngine.PostEvent("Play_Gun3_Reload", gameObject);
         }
         if (bullets == 0 && gunChosen == 2)
         {
             nextTimeToFire = Time.time + 1f;
             bullets = 20f;
-            AkSoundEngine.PostEvent("Play_Empty_Magazine", gameObject);
-            AkSoundEngine.PostEvent("Play_Gun2_Reload", gameObject);
         }
-
 
 
         if (Input.GetKeyDown(KeyCode.R) && gunChosen == 0)
         {
             nextTimeToFire = Time.time + 2f;
             bullets = 6f;
-            AkSoundEngine.PostEvent("Play_Gun1_Reload", gameObject);
         }
         if (Input.GetKeyDown(KeyCode.R) && gunChosen == 1)
         {
             nextTimeToFire = Time.time + 2f;
             bullets = 3f;
-            AkSoundEngine.PostEvent("Play_Gun3_Reload", gameObject);
         }
         if (Input.GetKeyDown(KeyCode.R) && gunChosen == 2)
         {
             nextTimeToFire = Time.time + 1f;
             bullets = 20f;
-            AkSoundEngine.PostEvent("Play_Gun2_Reload", gameObject);
         }
-
 
 
         shootAnim = false;
@@ -182,7 +166,6 @@ public class Gun : MonoBehaviour
             bullets--;
             NormalShoot();
             shootAnim = true;
-            AkSoundEngine.PostEvent("Play_Gun1_Pistol", gameObject);
         }
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
         //Sniper shoot mode
@@ -191,7 +174,6 @@ public class Gun : MonoBehaviour
             nextTimeToFire = Time.time + 1f / fireRate;
             NormalShoot();
             shootAnim = true;
-            AkSoundEngine.PostEvent("Play_Gun2_Sniper", gameObject);
         }
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
         //Shotgun shoot mode
@@ -201,7 +183,6 @@ public class Gun : MonoBehaviour
             bullets--;
             ScatterShot();
             shootAnim = true;
-            AkSoundEngine.PostEvent("Play_Gun3_Shotgun", gameObject);
         }
         //Shoot when mouse1 pressed and shoot delay is over, reset timer
         //AR shoot mode
@@ -211,7 +192,6 @@ public class Gun : MonoBehaviour
             nextTimeToFire = Time.time + 1f / fireRate;
             NormalShoot();
             shootAnim = true;
-            AkSoundEngine.PostEvent("Play_Gun4_AutomaticRifle", gameObject);
         }
 
         if (shootAnim == false)
