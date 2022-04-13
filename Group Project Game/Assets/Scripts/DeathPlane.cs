@@ -13,6 +13,7 @@ public class DeathPlane : MonoBehaviour
     {
         if (other.gameObject == player)
         {
+            AkSoundEngine.PostEvent("Play_Character_Death", gameObject);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
