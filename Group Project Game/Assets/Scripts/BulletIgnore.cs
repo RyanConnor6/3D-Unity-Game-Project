@@ -23,6 +23,10 @@ public class BulletIgnore : MonoBehaviour
         {
             Debug.Log("Collision Detected");
         }
+        else if (other.gameObject.name.Contains("Music"))
+        {
+            
+        }
         else
         {
             Destroy(gameObject);
